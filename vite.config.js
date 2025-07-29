@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
     // Optimize build for production
-    minify: "terser",
+    outDir: "dist",
+    assetsDir: "assets",
     sourcemap: false,
     rollupOptions: {
       output: {
