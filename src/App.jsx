@@ -60,7 +60,7 @@ function App() {
         </div>
 
         {/* Coming Soon Text */}
-        <h1 className="text-6xl lg:text-7xl font-bold text-white mb-7 tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-7 tracking-tight">
           <span className="bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
             Coming Soon
           </span>
