@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   return (
-    <div className="flex justify-between items-center p-4 bg-gray-100 py-5 px-12">
+    <div className="flex justify-between items-center p-4 bg-white py-5 px-12">
       {/* Left side of the navigation bar */}
       <Link to="/">
         <img
@@ -32,9 +32,16 @@ const Navigation = () => {
       {/* Right side of the navigation bar */}
       <ul className="flex gap-4">
         <li>
-          <Link to="/login">
-            <Button className="rounded-full">Get started now</Button>
+          <Link to="/limited-special">
+            <Button variant="ghost" className="rounded-lg text-slate-900">
+              Limited special
+            </Button>
           </Link>
+        </li>
+        <li>
+          <Button asChild className="rounded-full">
+            <Link to="/get-started-now">Get started now</Link>
+          </Button>
         </li>
       </ul>
     </div>
