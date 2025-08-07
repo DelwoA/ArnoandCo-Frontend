@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div className="bg-blue-200">
+    <div className="bg-blue-200 ">
       <Navigation />
-      <div className="mt-10 mx-6">
+      <div className="mt-10 ">
         <Outlet />
       </div>
     </div>

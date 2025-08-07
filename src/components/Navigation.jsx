@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   return (
-    <div className="flex justify-between items-center bg-white py-3 px-12 mx-auto max-w-[1350px] rounded-full shadow-lg shadow-gray-800/3 sticky top-4 z-50">
+    <div className="flex justify-between items-center bg-white py-3 px-12 mx-auto max-w-[1380px] rounded-full shadow-lg shadow-gray-800/3 sticky top-4 z-50">
       {/* Left side of the navigation bar */}
       <Link to="/">
         <img
@@ -12,7 +12,6 @@ const Navigation = () => {
           className="w-20 p-0"
         />
       </Link>
-
       {/* Center of the navigation bar */}
       <ul className="flex gap-4 space-x-6 text-slate-600 font-medium">
         <li className="hover:text-sky-700">
@@ -28,7 +27,6 @@ const Navigation = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-
       {/* Right side of the navigation bar */}
       <ul className="flex gap-4">
         <li>
