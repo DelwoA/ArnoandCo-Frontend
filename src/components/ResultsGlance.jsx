@@ -1,6 +1,6 @@
 import { Search, Timer, Smartphone, Globe } from "lucide-react";
 import ContentWrapper from "./ContentWrapper";
-import { Card, CardContent } from "./ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 const ResultsGlance = () => {
   const stats = [
