@@ -1,19 +1,17 @@
+/* Navigation.jsx */
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-const Navigation = () => {
-  return (
-    <div className="flex justify-between items-center bg-white py-3 px-12 mx-auto max-w-[1380px] rounded-full shadow-lg shadow-gray-800/3 sticky top-4 z-50">
-      {/* Left side of the navigation bar */}
+const Navigation = () => (
+  <header className="sticky top-4 z-50 px-4 sm:px-6 lg:px-7">
+    <div className="mx-auto max-w-[1344px] flex items-center justify-between rounded-full py-3 px-16 bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-1 ring-white/40 shadow-lg shadow-black/10">
+      {/* logo */}
       <Link to="/">
-        <img
-          src="/logo-primary-transparent.png"
-          alt="Logo"
-          className="w-20 p-0"
-        />
+        <img src="/logo-primary-transparent.png" alt="Logo" className="w-20" />
       </Link>
-      {/* Center of the navigation bar */}
-      <ul className="flex gap-4 space-x-6 text-slate-600 font-medium">
+
+      {/* mid links */}
+      <ul className="flex space-x-6 text-slate-600 font-medium">
         <li className="hover:text-sky-700">
           <Link to="/">Home</Link>
         </li>
@@ -27,7 +25,8 @@ const Navigation = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      {/* Right side of the navigation bar */}
+
+      {/* right buttons */}
       <ul className="flex gap-4">
         <li>
           <Link to="/limited-special">
@@ -43,7 +42,7 @@ const Navigation = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  </header>
+);
 
 export default Navigation;
