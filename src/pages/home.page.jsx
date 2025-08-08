@@ -1,10 +1,14 @@
-import ContentWrapper from "@/components/ContentWrapper";
+import Hero from "@/components/Hero";
+import WhatWeCanBuildForYou from "@/components/WhatWeCanBuildForYou";
+import ResultsGlance from "@/components/ResultsGlance";
 
 const HomePage = () => {
   return (
-    <ContentWrapper>
-      <h1>HomePage</h1>
-    </ContentWrapper>
+    <>
+      <Hero />
+      <WhatWeCanBuildForYou />
+      <ResultsGlance />
+    </>
   );
 };
 

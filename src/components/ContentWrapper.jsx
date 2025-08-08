@@ -16,7 +16,7 @@
  */
 
 const ContentWrapper = ({ children }) => {
-  return <div className="max-w-[1350px] mx-auto">{children}</div>;
+  return <div className="max-w-[1400px] mx-auto px-7">{children}</div>;
 };
 
 export default ContentWrapper;
