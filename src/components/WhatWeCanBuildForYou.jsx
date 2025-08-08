@@ -70,7 +70,7 @@ const WhatWeCanBuildForYou = () => {
   return (
     <ContentWrapper>
       {/* Outer section dimensions are intentionally untouched */}
-      <section className="bg-white rounded-3xl overflow-hidden mt-13 mb-10 shadow-sm flex flex-col lg:flex-row">
+      <section className="bg-white rounded-3xl overflow-hidden mb-10 shadow-sm flex flex-col lg:flex-row">
         {/* Inner container to control padding and grid without affecting outer layout */}
         <div className="p-8 md:p-12 lg:p-16 w-full">
           <div className="mb-8 md:mb-10">
