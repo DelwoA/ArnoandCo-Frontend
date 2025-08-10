@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const FinalCTA = () => {
   return (
     <ContentWrapper>
-      <section className="mt-13 pb-10">
+      <section className="pb-10">
         <div className="bg-black rounded-3xl overflow-hidden shadow-sm text-center p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Let's make your business easy to find and easy to buy from
