@@ -86,7 +86,14 @@ const WhatWeCanBuildForYou = () => {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="bg-gray-50 rounded-2xl shadow-sm p-6 flex flex-col"
+                className="group relative overflow-visible
+                          bg-gray-50 rounded-2xl p-6 flex flex-col
+                          border border-gray-200 ring-1 ring-transparent
+                          transition-shadow duration-200
+                          hover:ring-[#c0e0f6b3]
+                          hover:shadow-[0_0_0_2px_#c0e0f68c,0_0_18px_6px_#c0e0f659,0_0_48px_16px_#c0e0f640]
+                          focus-within:ring-[#c0e0f6b3]
+                          focus-within:shadow-[0_0_0_2px_#c0e0f68c,0_0_18px_6px_#c0e0f659,0_0_48px_16px_#c0e0f640]"
               >
                 <div className="flex justify-end mb-4">
                   <span className="text-3xl font-bold text-black">

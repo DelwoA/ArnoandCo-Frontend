@@ -17,10 +17,10 @@ const Hero = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center rounded-full text-base font-medium bg-[#FACC15] text-black hover:bg-[#F59E0B] transition-all h-12 px-8 py-3 shadow-sm w-full sm:w-auto"
+            className="group inline-flex items-center justify-center rounded-full text-base font-medium bg-[#071b31] text-white hover:bg-[#c0e0f6] hover:text-[#071b31] transition-all duration-300 ease-in-out h-12 px-8 py-3 shadow-sm w-full sm:w-auto"
           >
             Book a free consultation
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <ArrowRight className="group-hover:translate-x-1.5 transition-all duration-300 ease-in-out ml-2 h-5 w-5" />
           </Link>
         </div>
         <div className="flex-1 hidden lg:block">
