@@ -21,7 +21,7 @@ const TryYourNumbersCalculator = () => {
 
   return (
     <ContentWrapper>
-      <section className="bg-white rounded-3xl overflow-hidden mb-10 shadow-sm">
+      <section className="bg-white rounded-3xl overflow-hidden mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm">
         <div className="p-8 md:p-12">
           <div className="mb-10">
             <div className="flex items-center">
