@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <ContentWrapper>
-      <main className="bg-white rounded-3xl overflow-hidden mt-13 mb-10 shadow-sm flex flex-col lg:flex-row">
+      <main className="bg-white rounded-3xl overflow-hidden mt-10 sm:mt-11 md:mt-12 lg:mt-13 mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm flex flex-col lg:flex-row">
         <div className="p-8 md:p-12 lg:p-16 flex-1">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
             We build great digital products and AI solutions.

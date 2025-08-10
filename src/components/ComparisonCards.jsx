@@ -20,7 +20,7 @@ const ComparisonCards = () => {
 
   return (
     <ContentWrapper>
-      <section className="mb-10">
+      <section className="mb-7 sm:mb-8 md:mb-9 lg:mb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* No website */}
           <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10">

@@ -24,7 +24,7 @@ const Navigation = () => {
       <nav>
         {/* TODO: Create a new category as a brand that i am first in. The category is: first ever IT company to feature instant contact and self payments (like fiverr). [source: https://www.instagram.com/reel/DM5EqooNNOP/?igsh=OGl3ZjhobzUwNjls] */}
         {/* TODO: 1344px is the max-w for the desktop menu during start, then reduce to 1000px as scrolling takes place */}
-        <div className="mx-auto max-w-[1344px] hidden lg:flex items-center justify-between rounded-full py-3 px-16 bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-100 border-1">
+        <div className="mx-auto max-w-[1344px] hidden lg:flex items-center justify-between rounded-full py-3 px-16 bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1">
           {/* logo */}
           <Link to="/">
             <img
@@ -74,7 +74,7 @@ const Navigation = () => {
                rounded-full py-3 px-8
                bg-gradient-to-b from-white/30 via-white/20 to-white/10
                backdrop-blur-md backdrop-saturate-150
-               ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-100 border-1"
+               ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1"
           >
             {/* Logo */}
             <Link to="/">
