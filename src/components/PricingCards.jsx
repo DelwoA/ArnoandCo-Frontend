@@ -6,7 +6,7 @@ const PricingCards = () => {
   const packages = [
     {
       title: "Launch Website",
-      price: "from $2,500",
+      price: "from $900",
       features: [
         "5 pages",
         "Contact form",
@@ -17,7 +17,7 @@ const PricingCards = () => {
     },
     {
       title: "Custom App",
-      price: "from $5,000",
+      price: "from $3,000",
       features: [
         "Custom functionality",
         "User accounts",
@@ -28,7 +28,7 @@ const PricingCards = () => {
     },
     {
       title: "Ongoing Growth",
-      price: "from $500/mo",
+      price: "from $200/mo",
       features: [
         "Content updates",
         "SEO optimization",

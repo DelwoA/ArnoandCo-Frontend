@@ -23,11 +23,14 @@ const ComparisonCards = () => {
       <section className="mb-7 sm:mb-8 md:mb-9 lg:mb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* No website */}
-          <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10">
+          <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 group hover:scale-[1.02] transition-all duration-300">
             <h3 className="text-2xl font-bold text-black mb-6">No Website</h3>
             <ul className="space-y-4">
               {noWebsitePoints.map((point) => (
-                <li key={point} className="flex items-start">
+                <li
+                  key={point}
+                  className="flex items-start group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
+                >
                   <div className="flex-shrink-0 bg-red-100 rounded-full p-1 mr-3">
                     <X className="h-5 w-5 text-red-600" />
                   </div>
@@ -42,14 +45,17 @@ const ComparisonCards = () => {
             </div>
           </div>
 
-          {/* With Arno & Co. */}
-          <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10">
+          {/* Website with Arno & Co. */}
+          <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 group hover:scale-[1.02] transition-all duration-300">
             <h3 className="text-2xl font-bold text-black mb-6">
               Website with Arno & Co.
             </h3>
             <ul className="space-y-4">
               {withArnoPoints.map((point) => (
-                <li key={point} className="flex items-start">
+                <li
+                  key={point}
+                  className="flex items-start group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
+                >
                   <div className="flex-shrink-0 bg-green-100 rounded-full p-1 mr-3">
                     <Check className="h-5 w-5 text-green-600" />
                   </div>

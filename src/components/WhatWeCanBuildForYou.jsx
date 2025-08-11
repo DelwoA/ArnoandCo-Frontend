@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, X, ArrowRight } from "lucide-react";
 import ContentWrapper from "./ContentWrapper";
+import BlueGlow from "./BlueGlow";
 
 const WhatWeCanBuildForYou = () => {
   const [openDialog, setOpenDialog] = useState(null);
@@ -84,94 +85,86 @@ const WhatWeCanBuildForYou = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
-              <div
-                key={service.title}
-                className="group relative overflow-visible
-                          bg-gray-50 rounded-2xl p-6 flex flex-col
-                          border border-gray-200 ring-1 ring-transparent
-                          transition-shadow duration-200
-                          hover:ring-[#c0e0f6b3]
-                          hover:shadow-[0_0_0_2px_#c0e0f68c,0_0_18px_6px_#c0e0f659,0_0_48px_16px_#c0e0f640]
-                          focus-within:ring-[#c0e0f6b3]
-                          focus-within:shadow-[0_0_0_2px_#c0e0f68c,0_0_18px_6px_#c0e0f659,0_0_48px_16px_#c0e0f640]"
-              >
-                <div className="flex justify-end mb-4">
-                  <span className="text-3xl font-bold text-black">
-                    {service.number}
-                  </span>
-                </div>
-                <h3 className="text-2xl font-bold text-black mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-700 mb-4">{service.description}</p>
-                <ul className="space-y-2 mb-6">
-                  {service.features.slice(0, 4).map((feature) => (
-                    <li key={feature} className="flex items-start">
-                      <Check className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-auto">
-                  <button
-                    type="button"
-                    onClick={() => setOpenDialog(index)}
-                    className="inline-flex items-center text-black hover:underline font-medium"
-                  >
-                    Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                  </button>
-                </div>
+              <BlueGlow key={service.title} rounded="rounded-2xl">
+                <div className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200">
+                  <div className="flex justify-end mb-4">
+                    <span className="text-3xl font-bold text-black">
+                      {service.number}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-black mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-700 mb-4">{service.description}</p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.slice(0, 4).map((feature) => (
+                      <li key={feature} className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-auto">
+                    <button
+                      type="button"
+                      onClick={() => setOpenDialog(index)}
+                      className="inline-flex items-center text-black hover:underline font-medium"
+                    >
+                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                    </button>
+                  </div>
 
-                {openDialog === index && (
-                  <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                    <div className="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6">
-                      <div className="flex justify-between items-start mb-4">
-                        <h3 className="text-2xl font-bold text-black">
-                          {service.title}
-                        </h3>
-                        <button
-                          type="button"
-                          onClick={() => setOpenDialog(null)}
-                          className="text-gray-500 hover:text-gray-700"
-                          aria-label="Close dialog"
-                        >
-                          <X className="h-5 w-5" />
-                        </button>
-                      </div>
-                      <p className="text-gray-700 mb-4">
-                        {service.description}
-                      </p>
-                      <div className="mb-4">
-                        <h4 className="font-medium text-black mb-2">
-                          What we deliver:
-                        </h4>
-                        <ul className="space-y-2">
-                          {service.features.map((feature) => (
-                            <li key={feature} className="flex items-start">
-                              <Check className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      {service.example && (
-                        <p className="text-gray-700 italic">
-                          {service.example}
+                  {openDialog === index && (
+                    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+                      <div className="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6">
+                        <div className="flex justify-between items-start mb-4">
+                          <h3 className="text-2xl font-bold text-black">
+                            {service.title}
+                          </h3>
+                          <button
+                            type="button"
+                            onClick={() => setOpenDialog(null)}
+                            className="text-gray-500 hover:text-gray-700"
+                            aria-label="Close dialog"
+                          >
+                            <X className="h-5 w-5" />
+                          </button>
+                        </div>
+                        <p className="text-gray-700 mb-4">
+                          {service.description}
                         </p>
-                      )}
-                      <div className="mt-6">
-                        <button
-                          type="button"
-                          onClick={() => setOpenDialog(null)}
-                          className="inline-flex items-center justify-center rounded-full text-sm font-medium bg-black text-white hover:bg-gray-900 transition-colors h-9 px-5"
-                        >
-                          Close
-                        </button>
+                        <div className="mb-4">
+                          <h4 className="font-medium text-black mb-2">
+                            What we deliver:
+                          </h4>
+                          <ul className="space-y-2">
+                            {service.features.map((feature) => (
+                              <li key={feature} className="flex items-start">
+                                <Check className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
+                                <span className="text-gray-700">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        {service.example && (
+                          <p className="text-gray-700 italic">
+                            {service.example}
+                          </p>
+                        )}
+                        <div className="mt-6">
+                          <button
+                            type="button"
+                            onClick={() => setOpenDialog(null)}
+                            className="inline-flex items-center justify-center rounded-full text-sm font-medium bg-black text-white hover:bg-gray-900 transition-colors h-9 px-5"
+                          >
+                            Close
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
-              </div>
+                  )}
+                </div>
+              </BlueGlow>
             ))}
           </div>
         </div>
