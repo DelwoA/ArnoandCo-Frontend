@@ -1,92 +1,130 @@
 import { Search, Timer, Smartphone, Globe } from "lucide-react";
 import ContentWrapper from "./ContentWrapper";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
 
 const ResultsGlance = () => {
-  const stats = [
-    {
-      icon: (
-        <Search
-          size={32}
-          className="text-blue-500 group-hover:opacity-90 transition-opacity"
-        />
-      ),
-      number: "6 out of 10",
-      description: "customers check online first",
-      source: "Source: Google Consumer Insights",
-    },
-    {
-      icon: (
-        <Timer
-          size={32}
-          className="text-blue-500 group-hover:opacity-90 transition-opacity"
-        />
-      ),
-      number: "3 seconds",
-      description: "site load time before visitors leave",
-      source: "Source: Google/SOASTA Research",
-    },
-    {
-      icon: (
-        <Smartphone
-          size={32}
-          className="text-blue-500 group-hover:opacity-90 transition-opacity"
-        />
-      ),
-      number: "58%",
-      description: "of all web visits are on mobile devices",
-      source: "Source: Statista Global Report",
-    },
-    {
-      icon: (
-        <Globe
-          size={32}
-          className="text-blue-500 group-hover:opacity-90 transition-opacity"
-        />
-      ),
-      number: "67%",
-      description: "of purchase decisions are influenced by online presence",
-      source: "Source: BrightLocal Consumer Survey",
-    },
-  ];
-
   return (
     <ContentWrapper>
       <section className="bg-white rounded-3xl overflow-hidden mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm">
         <div className="p-8 md:p-12">
-          <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-black">
+          <div className="mb-8 md:mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-black tracking-tight">
               Results at a glance
             </h2>
-            <p className="text-lg text-gray-600 mt-2">
+            <p className="text-base md:text-lg text-gray-600 mt-2">
               Key metrics that show why a strong digital presence matters
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stats.map((stat) => (
-              <Card
-                key={stat.number}
-                className="group bg-gray-50 rounded-xl overflow-hidden min-h-[280px] flex flex-col items-center p-6 md:p-8 transition-all hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="flex flex-col items-center space-y-4 flex-1">
-                  <div className="relative flex items-center justify-center mb-2">
-                    <div className="absolute w-[48px] h-[48px] rounded-full bg-blue-50 border border-blue-100 group-hover:shadow-[0_0_8px_rgba(59,130,246,0.3)] transition-shadow"></div>
-                    <div className="z-10">{stat.icon}</div>
-                  </div>
-                  <CardContent className="p-0 space-y-2 text-center flex flex-col items-center">
-                    <div className="text-xl md:text-2xl font-extrabold text-black">
-                      {stat.number}
-                    </div>
-                    <p className="text-xs md:text-sm text-slate-600">
-                      {stat.description}
-                    </p>
-                  </CardContent>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+            {/* Card 1 */}
+            <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center transition-all duration-300 hover:-translate-y-[3px] hover:shadow-sm">
+              <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
+                <div className="relative inline-flex items-center justify-center mb-2.5">
+                  <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+                  <Search
+                    size={22}
+                    className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                  />
                 </div>
-                <div className="mt-4 text-center w-full">
-                  <p className="text-xs text-slate-500 italic">{stat.source}</p>
+                <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
+                  6 out of 10
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 px-0 mt-0">
+                <p className="text-sm md:text-base text-slate-600 leading-normal">
+                  customers check online first
+                </p>
+              </CardContent>
+              <CardFooter className="justify-center px-0 mt-6 pb-5 md:pb-6">
+                <p className="text-[11px] md:text-xs text-slate-500/90 italic">
+                  Source: Google Consumer Insights
+                </p>
+              </CardFooter>
+            </Card>
+
+            {/* Card 2 */}
+            <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center transition-all duration-300 hover:-translate-y-[3px] hover:shadow-sm">
+              <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
+                <div className="relative inline-flex items-center justify-center mb-2.5">
+                  <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+                  <Timer
+                    size={22}
+                    className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                  />
                 </div>
-              </Card>
-            ))}
+                <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
+                  3 seconds
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 px-0 mt-0">
+                <p className="text-sm md:text-base text-slate-600 leading-normal">
+                  site load time before visitors leave
+                </p>
+              </CardContent>
+              <CardFooter className="justify-center px-0 mt-6 pb-5 md:pb-6">
+                <p className="text-[11px] md:text-xs text-slate-500/90 italic">
+                  Source: Google/SOASTA Research
+                </p>
+              </CardFooter>
+            </Card>
+
+            {/* Card 3 */}
+            <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center transition-all duration-300 hover:-translate-y-[3px] hover:shadow-sm">
+              <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
+                <div className="relative inline-flex items-center justify-center mb-2.5">
+                  <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+                  <Smartphone
+                    size={22}
+                    className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                  />
+                </div>
+                <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
+                  58%
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 px-0 mt-0">
+                <p className="text-sm md:text-base text-slate-600 leading-normal">
+                  of all web visits are on mobile devices
+                </p>
+              </CardContent>
+              <CardFooter className="justify-center px-0 mt-0 pb-5 md:pb-6">
+                <p className="text-[11px] md:text-xs text-slate-500/90 italic">
+                  Source: Statista Global Report
+                </p>
+              </CardFooter>
+            </Card>
+
+            {/* Card 4 */}
+            <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center transition-all duration-300 hover:-translate-y-[3px] hover:shadow-sm">
+              <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
+                <div className="relative inline-flex items-center justify-center mb-2.5">
+                  <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+                  <Globe
+                    size={22}
+                    className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                  />
+                </div>
+                <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
+                  67%
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 px-0 mt-0">
+                <p className="text-sm md:text-base text-slate-600 leading-normal">
+                  of purchase decisions are influenced by online presence
+                </p>
+              </CardContent>
+              <CardFooter className="justify-center px-0 mt-0 pb-5 md:pb-6">
+                <p className="text-[11px] md:text-xs text-slate-500/90 italic">
+                  Source: BrightLocal Consumer Survey
+                </p>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </section>
