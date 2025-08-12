@@ -19,13 +19,12 @@ const ResultsGlance = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6">
             {/* Card 1 */}
             <BlueGlow rounded="rounded-2xl">
-              <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
-                <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
-                  <div className="relative inline-flex items-center justify-center mb-2.5">
-                    <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+              <Card className="group relative bg-slate-50 px-5 pt-8 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
+                <CardHeader className="justify-items-center items-center px-0">
+                  <div className="inline-flex items-center justify-center mb-2.5 w-11 h-11 rounded-full bg-[#c0e0f6]/60 border border-[#9dcaf0] transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]">
                     <Search
                       size={22}
-                      className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                      className="text-[#071b31] transition-colors duration-200"
                     />
                   </div>
                   <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
@@ -42,13 +41,12 @@ const ResultsGlance = () => {
 
             {/* Card 2 */}
             <BlueGlow rounded="rounded-2xl">
-              <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
-                <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
-                  <div className="relative inline-flex items-center justify-center mb-2.5">
-                    <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+              <Card className="group relative bg-slate-50 px-5 pt-8 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
+                <CardHeader className="justify-items-center items-center px-0">
+                  <div className="inline-flex items-center justify-center mb-2.5 w-11 h-11 rounded-full bg-[#c0e0f6]/60 border border-[#9dcaf0] transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]">
                     <Timer
                       size={22}
-                      className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                      className="text-[#071b31] transition-colors duration-200"
                     />
                   </div>
                   <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
@@ -65,13 +63,12 @@ const ResultsGlance = () => {
 
             {/* Card 3 */}
             <BlueGlow rounded="rounded-2xl">
-              <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
-                <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
-                  <div className="relative inline-flex items-center justify-center mb-2.5">
-                    <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+              <Card className="group relative bg-slate-50 px-5 pt-8 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
+                <CardHeader className="justify-items-center items-center px-0">
+                  <div className="inline-flex items-center justify-center mb-2.5 w-11 h-11 rounded-full bg-[#c0e0f6]/60 border border-[#9dcaf0] transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]">
                     <Smartphone
                       size={22}
-                      className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                      className="text-[#071b31] transition-colors duration-200"
                     />
                   </div>
                   <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
@@ -88,13 +85,12 @@ const ResultsGlance = () => {
 
             {/* Card 4 */}
             <BlueGlow rounded="rounded-2xl">
-              <Card className="group relative bg-slate-50 p-5 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
-                <CardHeader className="justify-items-center items-center px-0 pt-5 md:pt-6">
-                  <div className="relative inline-flex items-center justify-center mb-2.5">
-                    <div className="absolute w-11 h-11 rounded-full bg-sky-50 ring-1 ring-sky-100 transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]"></div>
+              <Card className="group relative bg-slate-50 px-5 pt-8 rounded-2xl border border-slate-200/70 overflow-hidden min-h-[220px] md:min-h-[240px] text-center">
+                <CardHeader className="justify-items-center items-center px-0">
+                  <div className="inline-flex items-center justify-center mb-2.5 w-11 h-11 rounded-full bg-[#c0e0f6]/60 border border-[#9dcaf0] transition-[box-shadow] duration-300 group-hover:shadow-[0_6px_14px_-6px_rgba(2,132,199,0.25)]">
                     <Globe
                       size={22}
-                      className="z-10 text-sky-600 transition-colors duration-200 group-hover:text-sky-700"
+                      className="text-[#071b31] transition-colors duration-200"
                     />
                   </div>
                   <CardTitle className="mt-2 text-2xl md:text-[28px] leading-tight font-extrabold text-slate-900 tracking-tight">
