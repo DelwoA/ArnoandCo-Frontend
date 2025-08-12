@@ -1,4 +1,4 @@
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/Home/Navigation";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
