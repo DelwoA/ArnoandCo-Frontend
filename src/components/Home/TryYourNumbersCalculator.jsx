@@ -49,7 +49,7 @@ const TryYourNumbersCalculator = () => {
                   step="100"
                   value={visitors}
                   onChange={(e) => setVisitors(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none accent-[#2566a7] cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>100</span>
@@ -68,7 +68,7 @@ const TryYourNumbersCalculator = () => {
                   step="0.5"
                   value={conversionRate}
                   onChange={(e) => setConversionRate(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none accent-[#2566a7] cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>0.5%</span>
@@ -90,7 +90,8 @@ const TryYourNumbersCalculator = () => {
                   step="10"
                   value={averageSale}
                   onChange={(e) => setAverageSale(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none accent-[#2566a7] cursor-pointer"
+                  // className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>$50</span>
@@ -107,7 +108,7 @@ const TryYourNumbersCalculator = () => {
               <div className="space-y-6">
                 <div className="text-center">
                   <p className="text-gray-700">You could make about</p>
-                  <p className="text-3xl font-bold text-green-600">
+                  <p className="text-3xl font-bold text-[#2566a7]">
                     ${monthlyRevenue.toLocaleString()}
                   </p>
                   <p className="text-gray-700">each month</p>

@@ -23,7 +23,7 @@ const BeSeenOnGoogle = () => {
                 {/* Icon */}
                 <div className="flex justify-center mb-3">
                   <div className="relative flex h-12 w-12 items-center justify-center">
-                    <span className="absolute inset-0 rounded-full bg-[#c0e0f6]/45" />
+                    <span className="absolute inset-0 rounded-full bg-[#c0e0f6]/45 border border-[#9dcaf0]" />
                     <Search size={20} className="relative text-slate-700" />
                   </div>
                 </div>
@@ -67,7 +67,7 @@ const BeSeenOnGoogle = () => {
                 {/* Icon */}
                 <div className="flex justify-center mb-3">
                   <div className="relative flex h-12 w-12 items-center justify-center">
-                    <span className="absolute inset-0 rounded-full bg-[#c0e0f6]/45" />
+                    <span className="absolute inset-0 rounded-full bg-[#c0e0f6]/45 border border-[#9dcaf0]" />
                     <Tag size={20} className="relative text-slate-700" />
                   </div>
                 </div>
@@ -111,7 +111,7 @@ const BeSeenOnGoogle = () => {
                 {/* Icon */}
                 <div className="flex justify-center mb-3">
                   <div className="relative flex h-12 w-12 items-center justify-center">
-                    <span className="absolute inset-0 rounded-full bg-[#c0e0f6]/45" />
+                    <span className="absolute inset-0 rounded-full bg-[#c0e0f6]/45 border border-[#9dcaf0]" />
                     <MapPin size={20} className="relative text-slate-700" />
                   </div>
                 </div>

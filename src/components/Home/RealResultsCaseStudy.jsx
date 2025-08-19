@@ -4,18 +4,22 @@ import { ArrowRight } from "lucide-react";
 const RealResultsCaseStudy = () => {
   const cases = [
     {
-      problem: "Local restaurant with no online presence",
-      solution: "Created website with online menu and reservation system",
-      result: "+38% more inquiries in 60 days",
+      problem: "No website or online menu.\nHard to find on Google.",
+      solution:
+        "Fast site with searchable menu, photos, hours, reviews.\nGoogle Business Profile to appear on Maps.",
+      result: "+40% more inquiries in 60 days",
     },
     {
-      problem: "E-commerce store with complicated checkout",
-      solution: "Simplified checkout process from 5 steps to 2",
-      result: "22% fewer cart abandonments",
+      problem:
+        "5-step checkout, account required.\nHigh drop-off & abandoned carts.",
+      solution:
+        "2-step checkout with guest + address autofill.\nApple/Google/Shop Pay; upfront shipping & tax.",
+      result: "25% fewer cart abandonments",
     },
     {
-      problem: "Service business with manual booking process",
-      solution: "Implemented automated scheduling system",
+      problem: "Back-and-forth emails, double-bookings.\nNo reminders.",
+      solution:
+        "Online booking; calendar sync & time buffers.\nDeposits + automated confirmations & reminders.",
       result: "Saved 15 hours per week on admin tasks",
     },
   ];
@@ -33,39 +37,50 @@ const RealResultsCaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cases.map((caseStudy) => (
-              <div key={caseStudy.result} className="bg-gray-50 rounded-xl p-6">
-                <div className="space-y-4">
-                  <div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+            {cases.map((c) => (
+              <div
+                key={c.result}
+                className="bg-gray-50 rounded-xl p-6 hover:scale-[1.035] transition-all duration-300 h-full"
+              >
+                {/* 5-row grid keeps arrows aligned across cards at lg+ */}
+                <div className="grid grid-rows-[auto_1.25rem_auto_1.25rem_auto] h-full">
+                  {/* Problem (equalized height at lg) */}
+                  <div className="space-y-2 lg:min-h-[96px]">
                     <h3 className="text-sm font-medium text-gray-500">
                       Problem
                     </h3>
-                    <p className="text-black font-medium">
-                      {caseStudy.problem}
+                    <p className="text-black font-medium whitespace-pre-line">
+                      {c.problem}
                     </p>
                   </div>
-                  <div className="flex justify-center">
+
+                  {/* Arrow row (fixed height) */}
+                  <div className="flex items-center justify-center">
                     <ArrowRight className="h-5 w-5 text-gray-400" />
                   </div>
-                  <div>
+
+                  {/* What we did (equalized height at lg) */}
+                  <div className="space-y-2 lg:min-h-[112px]">
                     <h3 className="text-sm font-medium text-gray-500">
                       What we did
                     </h3>
-                    <p className="text-black font-medium">
-                      {caseStudy.solution}
+                    <p className="text-black font-medium whitespace-pre-line">
+                      {c.solution}
                     </p>
                   </div>
-                  <div className="flex justify-center">
+
+                  {/* Arrow row (fixed height) */}
+                  <div className="flex items-center justify-center">
                     <ArrowRight className="h-5 w-5 text-gray-400" />
                   </div>
-                  <div>
+
+                  {/* Result */}
+                  <div className="space-y-2">
                     <h3 className="text-sm font-medium text-gray-500">
                       Result
                     </h3>
-                    <p className="text-blue-600 font-bold">
-                      {caseStudy.result}
-                    </p>
+                    <p className="text-[#2566a7] font-bold">{c.result}</p>
                   </div>
                 </div>
               </div>
