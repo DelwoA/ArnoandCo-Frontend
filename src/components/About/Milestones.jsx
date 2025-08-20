@@ -1,4 +1,5 @@
 import ContentWrapper from "@/components/Home/ContentWrapper";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Milestones = () => {
   return (
@@ -15,48 +16,53 @@ const Milestones = () => {
           </div>
 
           {/* Desktop two-column timeline */}
-          <div className="hidden md:grid grid-cols-2 gap-8 relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 -translate-x-1/2" />
-
-            <div className="pr-6 text-right">
-              <h3 className="text-lg font-bold text-black">
-                Founded with a clear vision
-              </h3>
-              <p className="text-gray-600 mt-1">
-                Established Arno & Co. to build fast, reliable digital products.
-              </p>
+          <div className="hidden md:grid grid-cols-2 gap-x-8 relative">
+            <div className="pr-6 text-right space-y-8">
+              <div>
+                <h3 className="text-lg font-bold text-black">
+                  Founded with a clear vision
+                </h3>
+                <p className="text-gray-600 mt-1">
+                  Established Arno & Co. to build fast, reliable digital
+                  products.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-black">
+                  Launched our first platform
+                </h3>
+                <p className="text-gray-600 mt-1">
+                  Delivered a client‑ready product with modern UX and
+                  performance.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-black">
+                  Expanded capabilities
+                </h3>
+                <p className="text-gray-600 mt-1">
+                  Introduced AI‑assisted features and scalable architecture
+                  patterns.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-black">
+                  Partnerships and growth
+                </h3>
+                <p className="text-gray-600 mt-1">
+                  Built long‑term collaborations focused on measurable outcomes.
+                </p>
+              </div>
             </div>
-            <div className="pl-6" />
-
-            <div className="pr-6 text-right">
-              <h3 className="text-lg font-bold text-black">
-                Launched our first platform
-              </h3>
-              <p className="text-gray-600 mt-1">
-                Delivered a client‑ready product with modern UX and performance.
-              </p>
+            <div>
+              <DotLottieReact
+                className="w-200 absolute -top-1/4 -right-30"
+                src="https://lottie.host/0919a9b4-40e2-4372-b29e-90eca0ba4414/JPMfRhpGG0.lottie"
+                loop
+                autoplay
+              />
             </div>
-            <div className="pl-6" />
 
-            <div className="pr-6 text-right">
-              <h3 className="text-lg font-bold text-black">
-                Expanded capabilities
-              </h3>
-              <p className="text-gray-600 mt-1">
-                Introduced AI‑assisted features and scalable architecture
-                patterns.
-              </p>
-            </div>
-            <div className="pl-6" />
-
-            <div className="pr-6 text-right">
-              <h3 className="text-lg font-bold text-black">
-                Partnerships and growth
-              </h3>
-              <p className="text-gray-600 mt-1">
-                Built long‑term collaborations focused on measurable outcomes.
-              </p>
-            </div>
             <div className="pl-6" />
           </div>
 
