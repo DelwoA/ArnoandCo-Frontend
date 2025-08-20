@@ -14,7 +14,7 @@ const Trust = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
             <div className="flex items-center justify-center h-14 rounded-xl bg-gray-50 border border-gray-200 text-gray-600 font-semibold">
               ReactJS
             </div>
