@@ -10,7 +10,7 @@ const Milestones = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-black">
               Milestones
             </h2>
-            <p className="text-base md:text-lg text-gray-600 mt-2">
+            <p className="text-base md:text-lg text-gray-600 mt-1">
               A few highlights from our journey
             </p>
           </div>
@@ -54,9 +54,9 @@ const Milestones = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="flex items-center justify-center">
               <DotLottieReact
-                className="w-200 absolute -top-1/4 -right-30"
+                className="min-w-[608px] w-full object-cover scale-116"
                 src="https://lottie.host/0919a9b4-40e2-4372-b29e-90eca0ba4414/JPMfRhpGG0.lottie"
                 loop
                 autoplay
