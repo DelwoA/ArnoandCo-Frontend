@@ -2,7 +2,7 @@ import ContentWrapper from "@/components/Home/ContentWrapper";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const AboutHero = () => {
+const HeroAbout = () => {
   return (
     <ContentWrapper>
       <header className="bg-white rounded-3xl overflow-hidden mt-10 sm:mt-11 md:mt-12 lg:mt-13 mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm flex flex-col lg:flex-row">
@@ -26,7 +26,7 @@ const AboutHero = () => {
         <div className="flex-1 hidden lg:block">
           <img
             className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/hero-about.jpg"
             alt="Our team collaborating in a modern workspace"
           />
         </div>
@@ -35,4 +35,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default HeroAbout;

@@ -3,7 +3,7 @@ import Footer from "@/components/Home/Footer";
 
 const RootLayout = () => {
   return (
-    <div className="">
+    <div className="bg-gray-100">
       <Outlet />
       <Footer />
     </div>

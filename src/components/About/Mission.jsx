@@ -6,7 +6,7 @@ const Mission = () => {
   return (
     <ContentWrapper>
       <section className="bg-white rounded-3xl overflow-hidden mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-1 p-8 md:p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-12">
           <div>
             <div className="mb-4">
               <h2 className="text-3xl md:text-4xl font-bold text-black">
@@ -48,7 +48,7 @@ const Mission = () => {
           </div>
           <div className="flex items-center justify-center">
             <DotLottieReact
-              className="w-11/12 h-11/12"
+              className="w-110 md:min-w-[622px] md:w-full object-cover md:px-18 lg:px-10 pt-5 md:pt-10"
               src="https://lottie.host/6acd3fa8-e536-4654-bc2a-8ac055ce1fe6/4wJ7EmGUM3.lottie"
               loop
               autoplay
