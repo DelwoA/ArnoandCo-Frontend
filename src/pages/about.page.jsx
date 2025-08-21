@@ -1,4 +1,4 @@
-import AboutHero from "@/components/About/Hero";
+import HeroAbout from "@/components/About/HeroAbout";
 import Mission from "@/components/About/Mission";
 import Values from "@/components/About/Values";
 import Milestones from "@/components/About/Milestones";
@@ -9,7 +9,7 @@ import BottomCTA from "@/components/About/BottomCTA";
 const AboutPage = () => {
   return (
     <>
-      <AboutHero />
+      <HeroAbout />
       <Mission />
       <Values />
       <Milestones />
