@@ -57,7 +57,7 @@ const MessageForm = () => {
   };
 
   return (
-    <div>
+    <div id="message-form">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
         Send us a message
       </h2>
