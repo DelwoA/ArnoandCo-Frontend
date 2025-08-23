@@ -3,7 +3,7 @@ import Mission from "@/components/About/Mission";
 import Values from "@/components/About/Values";
 import Milestones from "@/components/About/Milestones";
 import Team from "@/components/About/Team";
-import Trust from "@/components/About/Trust";
+import Technologies from "@/components/About/Technologies";
 import BottomCTA from "@/components/About/BottomCTA";
 
 const AboutPage = () => {
@@ -14,7 +14,7 @@ const AboutPage = () => {
       <Values />
       <Milestones />
       {/* <Team /> */}
-      <Trust />
+      <Technologies />
       <BottomCTA />
     </>
   );
