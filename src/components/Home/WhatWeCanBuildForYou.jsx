@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check, X, ArrowRight } from "lucide-react";
-import ContentWrapper from "./ContentWrapper";
-import BlueGlow from "./BlueGlow";
+import ContentWrapper from "../ContentWrapper";
+import BlueGlow from "../BlueGlow";
 
 const WhatWeCanBuildForYou = () => {
   const [openDialog, setOpenDialog] = useState(null);

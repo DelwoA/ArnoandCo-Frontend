@@ -1,4 +1,4 @@
-import ContentWrapper from "@/components/Home/ContentWrapper";
+import ContentWrapper from "@/components/ContentWrapper";
 import { Check } from "lucide-react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 

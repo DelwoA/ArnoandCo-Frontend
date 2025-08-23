@@ -1,4 +1,4 @@
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 
 const WorkTimeline = () => {
   return (

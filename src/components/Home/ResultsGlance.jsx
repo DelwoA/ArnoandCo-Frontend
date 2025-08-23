@@ -1,7 +1,7 @@
 import { Search, Timer, Smartphone, Globe } from "lucide-react";
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
-import BlueGlow from "./BlueGlow";
+import BlueGlow from "../BlueGlow";
 
 const ResultsGlance = () => {
   return (

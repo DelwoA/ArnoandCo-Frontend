@@ -1,4 +1,4 @@
-import ContentWrapper from "@/components/Home/ContentWrapper";
+import ContentWrapper from "@/components/ContentWrapper";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Team = () => {

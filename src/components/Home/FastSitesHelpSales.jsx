@@ -1,4 +1,4 @@
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { CheckCircle2, AlertTriangle } from "lucide-react";
 
 const FastSitesHelpSales = () => {

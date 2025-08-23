@@ -1,7 +1,7 @@
-import ContentWrapper from "@/components/Home/ContentWrapper";
+import ContentWrapper from "@/components/ContentWrapper";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { ShieldCheck, Smile, Zap, Beaker, Code2, Users } from "lucide-react";
-import BlueGlow from "@/components/Home/BlueGlow";
+import BlueGlow from "@/components/BlueGlow";
 
 const Values = () => {
   return (

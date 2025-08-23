@@ -1,7 +1,7 @@
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
-import BlueGlow from "./BlueGlow";
+import BlueGlow from "../BlueGlow";
 
 const PricingCards = () => {
   return (

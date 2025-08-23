@@ -1,4 +1,4 @@
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { X, Check } from "lucide-react";
 
 const ComparisonCards = () => {

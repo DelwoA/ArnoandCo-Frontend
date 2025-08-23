@@ -1,4 +1,4 @@
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import {
   Clock,
   FileBarChart2,
@@ -6,7 +6,7 @@ import {
   MessageCircle,
   ArrowRight,
 } from "lucide-react";
-import BlueGlow from "./BlueGlow";
+import BlueGlow from "../BlueGlow";
 
 const TimeSaved = () => {
   return (

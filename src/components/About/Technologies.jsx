@@ -1,5 +1,5 @@
-import ContentWrapper from "@/components/Home/ContentWrapper";
-import BlueGlow from "@/components/Home/BlueGlow";
+import ContentWrapper from "@/components/ContentWrapper";
+import BlueGlow from "@/components/BlueGlow";
 
 const Technologies = () => {
   return (
