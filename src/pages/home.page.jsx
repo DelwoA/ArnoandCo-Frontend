@@ -26,7 +26,7 @@ const HomePage = () => {
       <RealResultsCaseStudy />
       <WorkTimeline />
       <PricingCards />
-      <TestimonialsCarousel />
+      {/* <TestimonialsCarousel /> */}
       <FinalCTA />
     </>
   );
