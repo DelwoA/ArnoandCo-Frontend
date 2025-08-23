@@ -17,6 +17,20 @@ const Milestones = () => {
 
           {/* Desktop two-column timeline */}
           <div className="hidden md:grid grid-cols-2 gap-x-8 relative">
+            {/* Center timeline line and dots for md+ */}
+            <div
+              className="hidden md:block absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-gray-500"
+              aria-hidden="true"
+            />
+            <div
+              className="hidden md:flex absolute inset-y-8 left-1/2 -translate-x-1/2 flex-col items-center justify-between"
+              aria-hidden="true"
+            >
+              <span className="w-3 h-3 rounded-full bg-blue-400" />
+              <span className="w-3 h-3 rounded-full bg-blue-500" />
+              <span className="w-3 h-3 rounded-full bg-blue-600" />
+              <span className="w-3 h-3 rounded-full bg-blue-700" />
+            </div>
             <div className="pr-6 text-right space-y-8">
               <div>
                 <h3 className="text-lg font-bold text-black">

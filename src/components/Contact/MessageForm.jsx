@@ -58,7 +58,7 @@ const MessageForm = () => {
 
   return (
     <div id="message-form">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
         Send us a message
       </h2>
       <p className="text-gray-600 mt-2 text-sm md:text-base">

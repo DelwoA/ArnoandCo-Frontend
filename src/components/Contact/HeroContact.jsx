@@ -8,14 +8,13 @@ const HeroContact = () => {
     <ContentWrapper>
       <header className="bg-white rounded-3xl overflow-hidden mt-10 sm:mt-11 md:mt-12 lg:mt-13 mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm flex flex-col lg:flex-row">
         <div className="p-8 md:p-12 lg:p-16 flex-1">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
             Contact Us
           </h1>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl">
-            Tell us a bit about your project or question.
-          </p>
-          <p className="text-base mb-8 md:text-lg text-gray-600 max-w-2xl">
-            We usually reply within 1–2 business days.
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mb-8">
+            Let’s talk about your goals and how we can help bring your ideas to
+            life. Reach out with your project details, and we’ll reply within 48
+            hours with the next steps.
           </p>
           <Link
             smooth
