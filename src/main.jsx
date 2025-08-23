@@ -13,6 +13,7 @@ import AboutPage from "@/pages/about.page.jsx";
 import ContactPage from "@/pages/contact.page.jsx";
 import GetStartedNowPage from "@/pages/get-started-now.page.jsx";
 import LimitedSpecialPage from "@/pages/limited-special.page.jsx";
+import NotFoundPage from "@/pages/404.pagae.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -28,6 +29,9 @@ createRoot(document.getElementById("root")).render(
             <Route path="/get-started-now" element={<GetStartedNowPage />} />
             <Route path="/limited-special" element={<LimitedSpecialPage />} />
           </Route>
+
+          {/* 404 Page - Catch all unmatched routes */}
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
