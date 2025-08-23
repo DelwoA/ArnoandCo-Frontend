@@ -1,5 +1,5 @@
 import HeroContact from "@/components/Contact/HeroContact";
-import ContentWrapper from "@/components/Home/ContentWrapper";
+import ContentWrapper from "@/components/ContentWrapper";
 import MessageForm from "@/components/Contact/MessageForm";
 import ConnectWithUs from "@/components/Contact/ConnectWithUs";
 import WhyChoose from "@/components/Contact/WhyChoose";

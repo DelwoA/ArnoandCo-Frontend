@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { Calculator as CalculatorIcon } from "lucide-react";
 
 const TryYourNumbersCalculator = () => {

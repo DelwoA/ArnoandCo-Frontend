@@ -1,4 +1,4 @@
-import ContentWrapper from "@/components/Home/ContentWrapper";
+import ContentWrapper from "@/components/ContentWrapper";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const TestimonialsCarousel = () => {

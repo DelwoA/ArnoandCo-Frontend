@@ -1,6 +1,6 @@
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapper from "../ContentWrapper";
 import { Search, Tag, MapPin, ArrowRight, TrendingUp } from "lucide-react";
-import BlueGlow from "./BlueGlow";
+import BlueGlow from "../BlueGlow";
 
 const BeSeenOnGoogle = () => {
   return (
