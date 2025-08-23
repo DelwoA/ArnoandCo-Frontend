@@ -9,8 +9,6 @@ import {
   PopoverContent,
   PopoverAnchor,
 } from "@/components/ui/popover";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,9 +41,9 @@ const Navigation = () => {
             <li className="hover:text-sky-700">
               <Link to="/about">About</Link>
             </li>
-            <li className="hover:text-sky-700">
+            {/* <li className="hover:text-sky-700">
               <Link to="/portfolio">Portfolio</Link>
-            </li>
+            </li> */}
             <li className="hover:text-sky-700">
               <Link to="/contact">Contact</Link>
             </li>
