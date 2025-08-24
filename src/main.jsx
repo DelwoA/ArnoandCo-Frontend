@@ -11,9 +11,9 @@ import HomePage from "@/pages/home.page.jsx";
 import AboutPage from "@/pages/about.page.jsx";
 // import PortfolioPage from "@/pages/portfolio.page.jsx";
 import ContactPage from "@/pages/contact.page.jsx";
-import GetStartedNowPage from "@/pages/get-started-now.page.jsx";
-import LimitedSpecialPage from "@/pages/limited-special.page.jsx";
-import NotFoundPage from "@/pages/404.pagae.jsx";
+import GetStartedComingSoonPage from "@/pages/get-started-coming-soon.page.jsx";
+import LimitedSpecialComingSoonPage from "@/pages/limited-special-coming-soon.page.jsx";
+import NotFoundPage from "@/pages/404.page.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -26,8 +26,14 @@ createRoot(document.getElementById("root")).render(
             <Route path="/about" element={<AboutPage />} />
             {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/get-started-now" element={<GetStartedNowPage />} />
-            <Route path="/limited-special" element={<LimitedSpecialPage />} />
+            <Route
+              path="/get-started-now"
+              element={<GetStartedComingSoonPage />}
+            />
+            <Route
+              path="/limited-special"
+              element={<LimitedSpecialComingSoonPage />}
+            />
           </Route>
 
           {/* 404 Page - Catch all unmatched routes */}

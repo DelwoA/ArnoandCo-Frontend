@@ -51,11 +51,13 @@ const Navigation = () => {
           {/* right buttons */}
           <ul className="flex gap-4">
             <li>
-              <Link to="/limited-special">
-                <Button variant="ghost" className="rounded-lg text-slate-900">
-                  Limited special
-                </Button>
-              </Link>
+              <Button
+                asChild
+                variant="ghost"
+                className="rounded-lg text-slate-900"
+              >
+                <Link to="/limited-special">Limited special</Link>
+              </Button>
             </li>
             <li>
               <Button asChild className="rounded-full">
