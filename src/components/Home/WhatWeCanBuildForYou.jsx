@@ -31,7 +31,24 @@ const WhatWeCanBuildForYou = () => {
               rounded="rounded-2xl"
               scale={openWebsites ? "transform-none" : "hover:scale-105"}
             >
-              <div className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200">
+              <div
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (openWebsites) return;
+                  setOpenWebsites(true);
+                }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (openWebsites) return;
+                    setOpenWebsites(true);
+                  }
+                }}
+              >
                 <div className="flex justify-end mb-4">
                   <span className="text-3xl font-bold text-black">01</span>
                 </div>
@@ -168,7 +185,24 @@ const WhatWeCanBuildForYou = () => {
 
             {/* 02 - Web Applications */}
             <BlueGlow rounded="rounded-2xl">
-              <div className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200">
+              <div
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (openWebApps) return;
+                  setOpenWebApps(true);
+                }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (openWebApps) return;
+                    setOpenWebApps(true);
+                  }
+                }}
+              >
                 <div className="flex justify-end mb-4">
                   <span className="text-3xl font-bold text-black">02</span>
                 </div>
@@ -307,7 +341,24 @@ const WhatWeCanBuildForYou = () => {
 
             {/* 03 - Mobile Applications */}
             <BlueGlow rounded="rounded-2xl">
-              <div className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200">
+              <div
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (openMobileApps) return;
+                  setOpenMobileApps(true);
+                }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (openMobileApps) return;
+                    setOpenMobileApps(true);
+                  }
+                }}
+              >
                 <div className="flex justify-end mb-4">
                   <span className="text-3xl font-bold text-black">03</span>
                 </div>
@@ -437,7 +488,24 @@ const WhatWeCanBuildForYou = () => {
 
             {/* 04 - AI Web/Mobile Applications */}
             <BlueGlow rounded="rounded-2xl">
-              <div className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200">
+              <div
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (openAIApps) return;
+                  setOpenAIApps(true);
+                }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (openAIApps) return;
+                    setOpenAIApps(true);
+                  }
+                }}
+              >
                 <div className="flex justify-end mb-4">
                   <span className="text-3xl font-bold text-black">04</span>
                 </div>
