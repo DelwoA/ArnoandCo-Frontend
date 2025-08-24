@@ -64,7 +64,7 @@ const GetStartedComingSoonPage = () => {
             <div className="hidden lg:block">
               <img
                 className="w-full h-[460px] object-cover rounded-2xl"
-                src="https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?q=80&w=2344&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="get-started-now-coming-soon.jpg"
                 alt="Get started coming soon"
               />
             </div>
