@@ -60,7 +60,10 @@ const Navigation = () => {
               </Button>
             </li>
             <li>
-              <Button asChild className="rounded-full">
+              <Button
+                asChild
+                className="rounded-full bg-[#071b31] hover:bg-[#071b31]/88 transition-all duration-300 ease-in-out"
+              >
                 <Link to="/get-started-now">Get started now</Link>
               </Button>
             </li>

@@ -32,7 +32,8 @@ const WhatWeCanBuildForYou = () => {
               scale={openWebsites ? "transform-none" : "hover:scale-105"}
             >
               <div
-                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                id="websites"
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer scroll-mt-31"
                 onClick={(e) => {
                   e.stopPropagation();
                   if (openWebsites) return;
@@ -186,7 +187,8 @@ const WhatWeCanBuildForYou = () => {
             {/* 02 - Web Applications */}
             <BlueGlow rounded="rounded-2xl">
               <div
-                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                id="web-applications"
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer scroll-mt-31"
                 onClick={(e) => {
                   e.stopPropagation();
                   if (openWebApps) return;
@@ -342,7 +344,8 @@ const WhatWeCanBuildForYou = () => {
             {/* 03 - Mobile Applications */}
             <BlueGlow rounded="rounded-2xl">
               <div
-                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                id="mobile-applications"
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer scroll-mt-55"
                 onClick={(e) => {
                   e.stopPropagation();
                   if (openMobileApps) return;
@@ -489,7 +492,8 @@ const WhatWeCanBuildForYou = () => {
             {/* 04 - AI Web/Mobile Applications */}
             <BlueGlow rounded="rounded-2xl">
               <div
-                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer"
+                id="ai-web-mobile-applications"
+                className="group relative overflow-hidden bg-gray-50 rounded-2xl p-6 flex flex-col border border-gray-200 cursor-pointer scroll-mt-55"
                 onClick={(e) => {
                   e.stopPropagation();
                   if (openAIApps) return;

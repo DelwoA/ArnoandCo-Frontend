@@ -57,7 +57,7 @@ const MessageForm = () => {
   };
 
   return (
-    <div id="message-form">
+    <div id="message-form" className="scroll-mt-46">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
         Send us a message
       </h2>
