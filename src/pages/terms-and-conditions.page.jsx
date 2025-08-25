@@ -111,7 +111,7 @@ const TermsAndConditionsPage = () => {
             </header>
 
             {/* Privacy */}
-            <section className="mt-13">
+            <section id="privacy-policy" className="mt-13 scroll-mt-34">
               <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">
                 Privacy Policy
               </h2>
@@ -158,7 +158,7 @@ const TermsAndConditionsPage = () => {
             </section>
 
             {/* Payment */}
-            <section className="mt-13">
+            <section id="payment-policy" className="mt-13 scroll-mt-34">
               <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">
                 Payment Policy
               </h2>
@@ -188,7 +188,7 @@ const TermsAndConditionsPage = () => {
             </section>
 
             {/* Refund */}
-            <section className="mt-13">
+            <section id="refund-policy" className="mt-13 scroll-mt-34">
               <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">
                 Refund Policy
               </h2>

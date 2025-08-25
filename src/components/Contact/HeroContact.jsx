@@ -1,7 +1,6 @@
 import ContentWrapper from "@/components/ContentWrapper";
-// import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const HeroContact = () => {
   return (
@@ -16,20 +15,14 @@ const HeroContact = () => {
             life. Reach out with your project details, and we’ll reply within 48
             hours with the next steps.
           </p>
-          <Link
+          <HashLink
             smooth
             to="#message-form"
-            scroll={(el) => {
-              const yOffset = -188; // adjust this number for your navbar height
-              const y =
-                el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-              window.scrollTo({ top: y, behavior: "smooth" });
-            }}
             className="group inline-flex items-center justify-center rounded-full text-base font-medium bg-[#071b31] text-white hover:bg-[#c0e0f6] hover:text-[#071b31] transition-all duration-300 ease-in-out h-12 px-8 py-3 shadow-sm w-full sm:w-auto"
           >
             Get in touch with us
             <ArrowRight className="group-hover:translate-x-1.5 transition-all duration-300 ease-in-out ml-2 h-5 w-5" />
-          </Link>
+          </HashLink>
         </div>
         <div className="flex-1 hidden lg:block">
           <img
