@@ -1,5 +1,5 @@
 /* Navigation.jsx */
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
@@ -33,30 +33,63 @@ const Navigation = () => {
               className="w-20"
             />
           </Link>
+
           {/* mid links */}
           <ul className="flex space-x-6 text-slate-600 font-medium">
-            <li className="hover:text-sky-700">
-              <Link to="/">Home</Link>
+            <li className="">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-sky-600 hover:text-sky-700 underline underline-offset-5"
+                    : "text-slate-600 hover:text-sky-700"
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li className="hover:text-sky-700">
-              <Link to="/about">About</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-sky-600 hover:text-sky-700 underline underline-offset-5"
+                    : "text-slate-600 hover:text-sky-700"
+                }
+              >
+                About
+              </NavLink>
             </li>
+            {/* TODO: Add portfolio link later when ready. */}
             {/* <li className="hover:text-sky-700">
               <Link to="/portfolio">Portfolio</Link>
             </li> */}
             <li className="hover:text-sky-700">
-              <Link to="/contact">Contact</Link>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-sky-600 hover:text-sky-700 underline underline-offset-5"
+                    : "text-slate-600 hover:text-sky-700 text-base"
+                }
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
+
           {/* right buttons */}
           <ul className="flex gap-4">
             <li>
               <Button
                 asChild
                 variant="ghost"
-                className="rounded-lg text-slate-900"
+                className="rounded-lg text-base
+                         text-slate-600 hover:text-sky-700
+                         aria-[current=page]:text-sky-600
+                         aria-[current=page]:underline aria-[current=page]:underline-offset-5"
               >
-                <Link to="/limited-special">Limited special</Link>
+                <NavLink to="/limited-special">Limited special</NavLink>
               </Button>
             </li>
             <li>
