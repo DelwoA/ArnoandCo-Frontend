@@ -13,10 +13,6 @@ import {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <header className="sticky top-4 z-50 px-4 sm:px-6 lg:px-7">
       <nav>
@@ -104,7 +100,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Menu */}
-        <Popover>
+        <Popover open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           {/* Pill wrapper */}
           <div
             className="relative mx-[5px] max-w-[1023px] lg:hidden
@@ -150,27 +146,44 @@ const Navigation = () => {
             sideOffset={6}
             collisionPadding={16}
             // Make the content match the pill’s responsive width
-            className="p-0 overflow-hidden rounded-2xl max-w-[1023px] w-[90vw] bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-[0.5px] ring-black/10 shadow-xl"
+            className="p-0 overflow-hidden rounded-2xl max-w-[1023px] w-[90vw] bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-[0.5px] ring-black/10 shadow-xl data-[state=open]:duration-200 data-[state=open]:ease-out data-[state=closed]:duration-300 data-[state=closed]:ease-in-out"
           >
             <div className="lg:hidden">
               <ul className="flex flex-col gap-2 md:gap-3 py-3 md:py-3 px-2 text-base sm:text-lg md:text-xl text-slate-800">
                 <li>
-                  <Link to="/" className="block px-6 py-2 md:py-3">
+                  <Link
+                    to="/"
+                    className="block px-6 py-2 md:py-3"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="block px-6 py-2 md:py-3">
+                  <Link
+                    to="/about"
+                    className="block px-6 py-2 md:py-3"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
                     About
                   </Link>
                 </li>
-                <li>
-                  <Link to="/portfolio" className="block px-6 py-2 md:py-3">
+                {/* TODO: Add portfolio link later when ready. */}
+                {/* <li>
+                  <Link
+                    to="/portfolio"
+                    className="block px-6 py-2 md:py-3"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
                     Portfolio
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <Link to="/contact" className="block px-6 py-2 md:py-3">
+                  <Link
+                    to="/contact"
+                    className="block px-6 py-2 md:py-3"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
                     Contact
                   </Link>
                 </li>
@@ -178,6 +191,7 @@ const Navigation = () => {
                   <Link
                     to="/limited-special"
                     className="block px-6 py-2 md:py-3"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     Limited special
                   </Link>
@@ -187,7 +201,11 @@ const Navigation = () => {
                     className="rounded-full w-full px-6 py-5 md:py-6 justify-start text-base sm:text-lg md:text-xl"
                     asChild
                   >
-                    <Link to="/get-started-now" className="block">
+                    <Link
+                      to="/get-started-now"
+                      className="block"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
                       Get started now
                     </Link>
                   </Button>
