@@ -24,11 +24,21 @@ const HeroAbout = () => {
           </Link>
         </div>
         <div className="flex-1 hidden lg:block">
-          <img
-            className="w-full h-full object-cover"
-            src="/hero-about.jpg"
-            alt="Our team collaborating in a modern workspace"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/hero-about.webp 1x, /hero-about@2x.webp 2x, /hero-about@3x.webp 3x"
+            />
+            <source
+              type="image/jpeg"
+              srcSet="/hero-about.jpg 1x, /hero-about@2x.jpg 2x, /hero-about@3x.jpg 3x"
+            />
+            <img
+              className="w-full h-full object-cover"
+              src="/hero-about.jpg"
+              alt="Spacious modern meeting room with large windows, pink chairs, a long wooden table, and hanging lights"
+            />
+          </picture>
         </div>
       </header>
     </ContentWrapper>
