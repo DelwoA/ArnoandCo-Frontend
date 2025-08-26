@@ -8,12 +8,12 @@ const Hero = () => {
       <main className="bg-white rounded-3xl overflow-hidden mt-10 sm:mt-11 md:mt-12 lg:mt-13 mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm flex flex-col lg:flex-row">
         <div className="p-8 md:p-12 lg:p-16 flex-1">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-            We build great digital products and AI solutions.
+            We build powerful websites, apps, and AI solutions.
           </h1>
           <p className="text-base md:text-lg text-gray-600 mb-8 max-w-2xl">
-            We partner with enterprises, startups, and governments worldwide to
-            develop cutting-edge technology products and Artificial Intelligence
-            solutions that help them achieve their goals.
+            We create websites, apps, and AI solutions that grow your business,
+            boost visibility, simplify tasks, and give customers a smooth,
+            connected online experience.
           </p>
           <Link
             to="/contact"
