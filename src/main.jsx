@@ -12,7 +12,7 @@ import AboutPage from "@/pages/about.page.jsx";
 // import PortfolioPage from "@/pages/portfolio.page.jsx";
 import ContactPage from "@/pages/contact.page.jsx";
 import GetStartedComingSoonPage from "@/pages/get-started-coming-soon.page.jsx";
-import LimitedSpecialComingSoonPage from "@/pages/limited-special-coming-soon.page.jsx";
+import LimitedSpecialPage from "@/pages/limited-special.page.jsx";
 import NotFoundPage from "@/pages/404.page.jsx";
 import TermsAndConditionsPage from "@/pages/terms-and-conditions.page.jsx";
 
@@ -31,10 +31,7 @@ createRoot(document.getElementById("root")).render(
               path="/get-started-now"
               element={<GetStartedComingSoonPage />}
             />
-            <Route
-              path="/limited-special"
-              element={<LimitedSpecialComingSoonPage />}
-            />
+            <Route path="/limited-special" element={<LimitedSpecialPage />} />
             <Route
               path="/terms-and-conditions"
               element={<TermsAndConditionsPage />}

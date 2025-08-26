@@ -62,11 +62,21 @@ const GetStartedComingSoonPage = () => {
 
             {/* Right: Hero image styling consistent with other pages */}
             <div className="hidden lg:block">
-              <img
-                className="w-full h-[460px] object-cover rounded-2xl"
-                src="get-started-now-coming-soon.jpg"
-                alt="Get started coming soon"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/get-started-now-coming-soon.webp 1x, /get-started-now-coming-soon@2x.webp 2x, /get-started-now-coming-soon@3x.webp 3x"
+                />
+                <source
+                  type="image/jpeg"
+                  srcSet="/get-started-now-coming-soon.jpg 1x, /get-started-now-coming-soon@2x.jpg 2x, /get-started-now-coming-soon@3x.jpg 3x"
+                />
+                <img
+                  className="w-full h-[460px] object-cover rounded-2xl"
+                  src="/get-started-now-coming-soon.jpg"
+                  alt="Loading screen graphic with a progress bar and the word 'Loading...' in pixelated font on a dark background"
+                />
+              </picture>
             </div>
           </div>
         </section>

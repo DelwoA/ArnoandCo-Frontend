@@ -25,11 +25,21 @@ const HeroContact = () => {
           </HashLink>
         </div>
         <div className="flex-1 hidden lg:block">
-          <img
-            className="w-full h-full object-cover"
-            src="/hero-contact.jpg"
-            alt=""
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/hero-contact.webp 1x, /hero-contact@2x.webp 2x, /hero-contact@3x.webp 3x"
+            />
+            <source
+              type="image/jpeg"
+              srcSet="/hero-contact.jpg 1x, /hero-contact@2x.jpg 2x, /hero-contact@3x.jpg 3x"
+            />
+            <img
+              className="w-full h-full object-cover"
+              src="/hero-contact.jpg"
+              alt="Minimalist workspace with a wooden desk, an open laptop, and a wireless mouse next to a modern white chair"
+            />
+          </picture>
         </div>
       </header>
     </ContentWrapper>
