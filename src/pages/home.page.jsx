@@ -25,7 +25,7 @@ const HomePage = () => {
       <TryYourNumbersCalculator />
       <RealResultsCaseStudy />
       <WorkTimeline />
-      <PricingCards />
+      {/* <PricingCards /> */}
       {/* <TestimonialsCarousel /> */}
       <FinalCTA />
     </>
