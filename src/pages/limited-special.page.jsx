@@ -1,0 +1,37 @@
+import { Link } from "react-router-dom";
+import { ArrowRight, Mail } from "lucide-react";
+
+const LimitedSpecialPage = () => {
+  return (
+    <main className="px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-[1344px] mt-15 md:mt-18 lg:mt-20">
+        <div className="text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-slate-800">
+            No limited specials right now
+          </h1>
+          <p className="mt-3 text-slate-600 text-sm sm:text-base md:text-lg">
+            We’ll announce the next one here — check back soon.
+          </p>
+
+          <div className="mt-8 flex items-center justify-center gap-3">
+            <Link
+              to="/"
+              className="inline-flex items-center px-5 sm:px-6 py-3 text-sm sm:text-base rounded-full bg-[#071b31] text-white hover:bg-slate-700 hover:text-white transition-all duration-300 ease-in-out"
+            >
+              Go to Home
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-5 py-3 text-sm sm:text-base sm:px-5 sm:py-3 rounded-full border text-[#071b31] bg-white hover:bg-[#c0e0f6] hover:text-[#071b31] ring-1 ring-black/10 hover:ring-[#c0e0f6]/70 transition-all duration-300 ease-in-out"
+            >
+              <Mail className="w-4 h-4 mr-2" /> Contact us
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default LimitedSpecialPage;
