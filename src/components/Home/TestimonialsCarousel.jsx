@@ -48,12 +48,11 @@ const TestimonialsCarousel = () => {
           <div className="relative">
             <div className="max-w-3xl mx-auto text-center">
               <div className="flex mb-4 justify-center">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-[#F9E356] text-[#F9E356]"
-                  />
-                ))}
+                <Star className="h-5 w-5 fill-[#F9E356] text-[#F9E356]" />
+                <Star className="h-5 w-5 fill-[#F9E356] text-[#F9E356]" />
+                <Star className="h-5 w-5 fill-[#F9E356] text-[#F9E356]" />
+                <Star className="h-5 w-5 fill-[#F9E356] text-[#F9E356]" />
+                <Star className="h-5 w-5 fill-[#F9E356] text-[#F9E356]" />
               </div>
               <blockquote className="text-xl md:text-2xl text-gray-700 italic mb-6">
                 "{testimonials[activeIndex].quote}"
