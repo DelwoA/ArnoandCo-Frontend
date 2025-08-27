@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
+import Reveal from "@/components/animations/Reveal";
 
 const initialState = {
   fullName: "",
@@ -58,161 +59,165 @@ const MessageForm = () => {
 
   return (
     <div id="message-form" className="scroll-mt-46">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
-        Send us a message
-      </h2>
-      <p className="text-gray-600 mt-2 text-sm md:text-base">
-        We’ll get back to you within 1–2 business days.
-      </p>
+      <Reveal direction="up">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
+          Send us a message
+        </h2>
+        <p className="text-gray-600 mt-2 text-sm md:text-base">
+          We’ll get back to you within 1–2 business days.
+        </p>
+      </Reveal>
 
-      <form onSubmit={handleSubmit} noValidate className="mt-6 space-y-5">
-        <div>
-          <label
-            htmlFor="fullName"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
-            Full Name
-          </label>
-          <Input
-            id="fullName"
-            name="fullName"
-            type="text"
-            value={values.fullName}
-            onChange={handleChange}
-            aria-invalid={errors.fullName ? "true" : "false"}
-            aria-describedby={errors.fullName ? "fullName-error" : undefined}
-            className="rounded-full bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31]"
-            placeholder="Jane Doe"
-            required
-          />
-          {errors.fullName && (
-            <p id="fullName-error" className="text-xs text-red-600 mt-1">
-              {errors.fullName}
-            </p>
-          )}
-        </div>
-
-        <div className="grid grid-cols-1 min-[560px]:grid-cols-2 gap-4">
+      <Reveal direction="up">
+        <form onSubmit={handleSubmit} noValidate className="mt-6 space-y-5">
           <div>
             <label
-              htmlFor="email"
+              htmlFor="fullName"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Email Address
+              Full Name
             </label>
             <Input
-              id="email"
-              name="email"
-              type="email"
-              value={values.email}
+              id="fullName"
+              name="fullName"
+              type="text"
+              value={values.fullName}
               onChange={handleChange}
-              aria-invalid={errors.email ? "true" : "false"}
-              aria-describedby={errors.email ? "email-error" : undefined}
+              aria-invalid={errors.fullName ? "true" : "false"}
+              aria-describedby={errors.fullName ? "fullName-error" : undefined}
               className="rounded-full bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31]"
-              placeholder="jane@example.com"
+              placeholder="Jane Doe"
               required
             />
-            {errors.email && (
-              <p id="email-error" className="text-xs text-red-600 mt-1">
-                {errors.email}
+            {errors.fullName && (
+              <p id="fullName-error" className="text-xs text-red-600 mt-1">
+                {errors.fullName}
               </p>
             )}
           </div>
+
+          <div className="grid grid-cols-1 min-[560px]:grid-cols-2 gap-4">
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Email Address
+              </label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                value={values.email}
+                onChange={handleChange}
+                aria-invalid={errors.email ? "true" : "false"}
+                aria-describedby={errors.email ? "email-error" : undefined}
+                className="rounded-full bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31]"
+                placeholder="jane@example.com"
+                required
+              />
+              {errors.email && (
+                <p id="email-error" className="text-xs text-red-600 mt-1">
+                  {errors.email}
+                </p>
+              )}
+            </div>
+            <div>
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Phone Number
+              </label>
+              <Input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputMode="tel"
+                pattern="\+?[0-9\s()\-]{7,}"
+                value={values.phone}
+                onChange={handleChange}
+                aria-invalid={errors.phone ? "true" : "false"}
+                aria-describedby={errors.phone ? "phone-error" : undefined}
+                className="rounded-full bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31]"
+                placeholder="+94 74 239 1833"
+                required
+              />
+              {errors.phone && (
+                <p id="phone-error" className="text-xs text-red-600 mt-1">
+                  {errors.phone}
+                </p>
+              )}
+            </div>
+          </div>
+
           <div>
             <label
-              htmlFor="phone"
+              htmlFor="subject"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Phone Number
+              Subject
             </label>
             <Input
-              id="phone"
-              name="phone"
-              type="tel"
-              inputMode="tel"
-              pattern="\+?[0-9\s()\-]{7,}"
-              value={values.phone}
+              id="subject"
+              name="subject"
+              type="text"
+              value={values.subject}
               onChange={handleChange}
-              aria-invalid={errors.phone ? "true" : "false"}
-              aria-describedby={errors.phone ? "phone-error" : undefined}
+              aria-invalid={errors.subject ? "true" : "false"}
+              aria-describedby={errors.subject ? "subject-error" : undefined}
               className="rounded-full bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31]"
-              placeholder="+94 74 239 1833"
+              placeholder="e.g., Website redesign inquiry"
               required
             />
-            {errors.phone && (
-              <p id="phone-error" className="text-xs text-red-600 mt-1">
-                {errors.phone}
+            {errors.subject && (
+              <p id="subject-error" className="text-xs text-red-600 mt-1">
+                {errors.subject}
               </p>
             )}
           </div>
-        </div>
 
-        <div>
-          <label
-            htmlFor="subject"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
-            Subject
-          </label>
-          <Input
-            id="subject"
-            name="subject"
-            type="text"
-            value={values.subject}
-            onChange={handleChange}
-            aria-invalid={errors.subject ? "true" : "false"}
-            aria-describedby={errors.subject ? "subject-error" : undefined}
-            className="rounded-full bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31]"
-            placeholder="e.g., Website redesign inquiry"
-            required
-          />
-          {errors.subject && (
-            <p id="subject-error" className="text-xs text-red-600 mt-1">
-              {errors.subject}
-            </p>
-          )}
-        </div>
+          <div>
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Message
+            </label>
+            <Textarea
+              id="message"
+              name="message"
+              value={values.message}
+              onChange={handleChange}
+              aria-invalid={errors.message ? "true" : "false"}
+              aria-describedby={errors.message ? "message-error" : undefined}
+              className="rounded-2xl bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31] min-h-36"
+              placeholder="Share a few details about your project, timeline, and goals."
+              required
+            />
+            {errors.message && (
+              <p id="message-error" className="text-xs text-red-600 mt-1">
+                {errors.message}
+              </p>
+            )}
+          </div>
 
-        <div>
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
-            Message
-          </label>
-          <Textarea
-            id="message"
-            name="message"
-            value={values.message}
-            onChange={handleChange}
-            aria-invalid={errors.message ? "true" : "false"}
-            aria-describedby={errors.message ? "message-error" : undefined}
-            className="rounded-2xl bg-gray-50 border-gray-200 focus-visible:ring-[#c0e0f6] focus-visible:border-[#071b31] min-h-36"
-            placeholder="Share a few details about your project, timeline, and goals."
-            required
-          />
-          {errors.message && (
-            <p id="message-error" className="text-xs text-red-600 mt-1">
-              {errors.message}
-            </p>
-          )}
-        </div>
-
-        <div className="flex items-center gap-3 pt-2">
-          <Button
-            type="submit"
-            className="rounded-full h-12 w-full text-base bg-[#071b31] text-white hover:bg-[#c0e0f6] hover:text-[#071b31] transition-all duration-200 ease-in-out shadow-sm"
-          >
-            <Send className="w-4 h-4 mr-1" />
-            Send Message
-          </Button>
-          {submitted && (
-            <span className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-full px-3 py-1">
-              Thanks! We'll be in touch shortly.
-            </span>
-          )}
-        </div>
-      </form>
+          <div className="flex items-center gap-3 pt-2">
+            <Button
+              type="submit"
+              className="rounded-full h-12 w-full text-base bg-[#071b31] text-white hover:bg-[#c0e0f6] hover:text-[#071b31] transition-all duration-200 ease-in-out shadow-sm"
+            >
+              <Send className="w-4 h-4 mr-1" />
+              Send Message
+            </Button>
+            {submitted && (
+              <span className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-full px-3 py-1">
+                Thanks! We'll be in touch shortly.
+              </span>
+            )}
+          </div>
+        </form>
+      </Reveal>
     </div>
   );
 };
