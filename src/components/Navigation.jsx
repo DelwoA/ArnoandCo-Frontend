@@ -19,13 +19,13 @@ const Navigation = () => {
         {/* TODO: 1344px is the max-w for the desktop menu during start, then reduce to 1000px as scrolling takes place */}
 
         {/* TODO: Mobile view nav bar, after tapping on link, the nav drop down does not close automatically. Fix it! */}
-        <div className="mx-auto max-w-[1344px] hidden lg:flex items-center justify-between rounded-full py-3 px-16 bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1">
+        <div className="mx-auto max-w-[1344px] hidden lg:flex items-center justify-between rounded-full py-5 px-16 bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1">
           {/* logo */}
           <Link to="/">
             <img
               src="/logo-primary-transparent.png"
               alt="Logo"
-              className="w-20"
+              className="h-8.5"
             />
           </Link>
 
@@ -101,11 +101,12 @@ const Navigation = () => {
         {/* Mobile Menu */}
         <Popover open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           {/* Pill wrapper */}
+          {/* PopoverAnchor component is used to define the element that the popover should position itself relative to. */}
           <PopoverAnchor>
             <div
               className="relative mx-[5px] max-w-[1023px] lg:hidden
                  flex items-center justify-between
-                 rounded-full py-3 px-8
+                 rounded-full py-5 px-8
                  bg-gradient-to-b from-white/30 via-white/20 to-white/10
                  backdrop-blur-md backdrop-saturate-150
                  ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1"
@@ -115,7 +116,7 @@ const Navigation = () => {
                 <img
                   src="/logo-primary-transparent.png"
                   alt="Logo"
-                  className="w-20"
+                  className="h-7.5"
                 />
               </Link>
 
