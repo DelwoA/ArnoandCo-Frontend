@@ -24,14 +24,14 @@ const Footer = () => {
               </p>
               <div className="mt-4 flex items-center gap-4">
                 <a
-                  href="mailto:hello@company.com"
+                  href="mailto:hello@arnoandco.com"
                   className="text-gray-400 hover:text-white"
                 >
                   <Mail size={20} />
                   <span className="sr-only">Email</span>
                 </a>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/94742391833"
                   className="text-gray-400 hover:text-white"
                 >
                   <MessageSquare size={20} />
