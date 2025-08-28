@@ -15,6 +15,13 @@ import FinalCTA from "@/components/Home/FinalCTA";
 const HomePage = () => {
   return (
     <>
+      <title>Arno & Co. | Digital Solutions to Help Businesses Grow.</title>
+      <meta
+        name="description"
+        content="Arno & Co. is a software development company that builds websites, apps and AI solutions to boost visibility and conversions—fast results in 3–6 weeks. Book a consult."
+      />
+      <link rel="canonical" href="https://arnoandco.com/" />
+
       <Hero />
       <WhatWeCanBuildForYou />
       <ResultsGlance />
