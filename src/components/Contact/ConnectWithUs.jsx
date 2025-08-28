@@ -22,7 +22,7 @@ const ConnectWithUs = () => {
           {/* Facebook */}
           <Reveal direction="up">
             <Link
-              to="#"
+              to="https://www.facebook.com/arnoandcohq/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center py-4 px-5 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-200 group"
