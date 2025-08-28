@@ -16,10 +16,10 @@ const Footer = () => {
                 <img
                   src="/logo-secondary-transparent.png"
                   alt="Arno & Co. Logo"
-                  className="h-[72px]"
+                  className="h-10 lg:h-8 xl:h-10"
                 />
               </Link>
-              <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+              <p className="text-gray-400 text-sm mt-1 lg:mt-3 leading-relaxed">
                 Tailored web development services for businesses of all sizes.
               </p>
               <div className="mt-4 flex items-center gap-4">
