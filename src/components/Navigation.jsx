@@ -1,4 +1,3 @@
-/* Navigation.jsx */
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
@@ -102,49 +101,41 @@ const Navigation = () => {
         {/* Mobile Menu */}
         <Popover open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           {/* Pill wrapper */}
-          <div
-            className="relative mx-[5px] max-w-[1023px] lg:hidden
-               flex items-center justify-between
-               rounded-full py-3 px-8
-               bg-gradient-to-b from-white/30 via-white/20 to-white/10
-               backdrop-blur-md backdrop-saturate-150
-               ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1"
-          >
-            {/* Logo */}
-            <Link to="/">
-              <img
-                src="/logo-primary-transparent.png"
-                alt="Logo"
-                className="w-20"
-              />
-            </Link>
+          <PopoverAnchor>
+            <div
+              className="relative mx-[5px] max-w-[1023px] lg:hidden
+                 flex items-center justify-between
+                 rounded-full py-3 px-8
+                 bg-gradient-to-b from-white/30 via-white/20 to-white/10
+                 backdrop-blur-md backdrop-saturate-150
+                 ring-1 ring-white/40 shadow-lg shadow-black/10 border-gray-200 border-1"
+            >
+              {/* Logo */}
+              <Link to="/">
+                <img
+                  src="/logo-primary-transparent.png"
+                  alt="Logo"
+                  className="w-20"
+                />
+              </Link>
 
-            {/* Invisible, full-width anchor (ONE child only) */}
-            <PopoverAnchor asChild>
-              <div
-                aria-hidden
-                className="absolute inset-x-0 top-full h-0 pointer-events-none"
-              />
-            </PopoverAnchor>
-
-            {/* Only this toggles the popover */}
-            <PopoverTrigger asChild>
-              <Button
-                variant="ghost"
-                className="aspect-square !p-0"
-                aria-label="Open menu"
-              >
-                <Menu className="size-8" />
-              </Button>
-            </PopoverTrigger>
-          </div>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="aspect-square !p-0"
+                  aria-label="Open menu"
+                >
+                  <Menu className="size-8" />
+                </Button>
+              </PopoverTrigger>
+            </div>
+          </PopoverAnchor>
 
           {/* Popover content */}
           <PopoverContent
             side="bottom"
             align="center"
             sideOffset={6}
-            collisionPadding={16}
             // Make the content match the pill’s responsive width
             className="p-0 overflow-hidden rounded-2xl max-w-[1023px] w-[90vw] bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-md backdrop-saturate-150 ring-[0.5px] ring-black/10 shadow-xl data-[state=open]:duration-200 data-[state=open]:ease-out data-[state=closed]:duration-300 data-[state=closed]:ease-in-out"
           >
