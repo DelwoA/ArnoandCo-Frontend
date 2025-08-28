@@ -23,7 +23,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route element={<RootLayout />}>
           <Route element={<MainLayout />}>
-            <Route index element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
             <Route path="/contact" element={<ContactPage />} />
