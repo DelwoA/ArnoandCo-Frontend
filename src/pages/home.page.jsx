@@ -15,12 +15,38 @@ import FinalCTA from "@/components/Home/FinalCTA";
 const HomePage = () => {
   return (
     <>
-      <title>Arno & Co. | Digital Solutions to Help Businesses Grow.</title>
+      <title>Arno & Co. - Digital Solutions to Help Businesses Grow.</title>
       <meta
         name="description"
         content="Arno & Co. is a software development company that builds websites, apps and AI solutions to boost visibility and conversions—fast results in 3–6 weeks. Book a consult."
       />
       <link rel="canonical" href="https://arnoandco.com/" />
+
+      {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Arno & Co." />
+      <meta
+        property="og:title"
+        content="Arno & Co. - Digital Solutions to Help Businesses Grow."
+      />
+      <meta
+        property="og:description"
+        content="Arno & Co. is a software development company that builds websites, apps and AI solutions to boost visibility and conversions—fast results in 3–6 weeks. Book a consult."
+      />
+      <meta property="og:url" content="https://arnoandco.com/" />
+      {/* TODO: Add Open Graph image later. */}
+      {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
+      {/* <meta
+        property="og:image"
+        content="https://arnoandco.com/og/home-card-1200x630.jpg"
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta
+        property="og:image:alt"
+        content="Arno & Co. — Websites, web apps, and AI solutions"
+      /> */}
+      <meta property="og:locale" content="en_US" />
 
       <Hero />
       <WhatWeCanBuildForYou />
