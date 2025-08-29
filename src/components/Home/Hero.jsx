@@ -8,7 +8,7 @@ const Hero = () => {
     <ContentWrapper>
       <main className="bg-white rounded-3xl overflow-hidden mt-10 sm:mt-11 md:mt-12 lg:mt-13 mb-7 sm:mb-8 md:mb-9 lg:mb-10 shadow-sm flex flex-col lg:flex-row">
         <div className="p-8 md:p-12 lg:p-16 flex-1">
-          <Reveal direction="up">
+          <Reveal direction="up" trigger="mount">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
               We build powerful websites, apps, and AI solutions.
             </h1>
@@ -27,7 +27,7 @@ const Hero = () => {
           </Reveal>
         </div>
         <div className="flex-1 hidden lg:block">
-          <Reveal direction="right" className="w-full h-full">
+          <Reveal direction="right" className="w-full h-full" trigger="mount">
             <picture>
               <source
                 type="image/webp"
