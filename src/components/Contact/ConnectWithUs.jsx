@@ -1,4 +1,4 @@
-import WhatsAppIcon from "@/components/Contact/WhatsAppIcon";
+import WhatsAppIcon from "@/components/Contact/WhatsappIcon";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Reveal from "@/components/animations/Reveal";
