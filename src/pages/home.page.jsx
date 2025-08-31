@@ -20,7 +20,7 @@ const HomePage = () => {
         name="description"
         content="Arno & Co. is a software development company that builds websites, apps and AI solutions to boost visibility and conversions—fast results in 3–6 weeks. Book a consult."
       />
-      <link rel="canonical" href="https://arnoandco.com/" />
+      <link rel="canonical" href="https://www.arnoandco.com" />
 
       {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
       <meta property="og:type" content="website" />
@@ -33,19 +33,14 @@ const HomePage = () => {
         property="og:description"
         content="Arno & Co. is a software development company that builds websites, apps and AI solutions to boost visibility and conversions—fast results in 3–6 weeks. Book a consult."
       />
-      <meta property="og:url" content="https://arnoandco.com/" />
-      {/* TODO: Add Open Graph image later. */}
+      <meta property="og:url" content="https://www.arnoandco.com" />
+
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
-      {/* <meta
-        property="og:image"
-        content="https://arnoandco.com/og/home-card-1200x630.jpg"
-      />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
       <meta
-        property="og:image:alt"
-        content="Arno & Co. — Websites, web apps, and AI solutions"
-      /> */}
+        property="og:image"
+        content="https://www.arnoandco.com/logo-primary.png"
+      />
+      <meta property="og:image:alt" content="Arno & Co. Logo." />
       <meta property="og:locale" content="en_US" />
 
       <Hero />

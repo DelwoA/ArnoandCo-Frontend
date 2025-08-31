@@ -16,7 +16,7 @@ const AboutPage = () => {
         name="description"
         content="Learn about Arno & Co., a startup team in Wyoming helping small businesses in Sri Lanka and the USA build websites, apps, and AI tools to grow faster."
       />
-      <link rel="canonical" href="https://arnoandco.com/about" />
+      <link rel="canonical" href="https://www.arnoandco.com/about" />
 
       {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
       <meta property="og:type" content="website" />
@@ -29,19 +29,14 @@ const AboutPage = () => {
         property="og:description"
         content="Learn about Arno & Co., a startup team in Wyoming helping small businesses in Sri Lanka and the USA build websites, apps, and AI tools to grow faster."
       />
-      <meta property="og:url" content="https://arnoandco.com/about" />
-      {/* TODO: Add Open Graph image later. */}
+      <meta property="og:url" content="https://www.arnoandco.com/about" />
+
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
-      {/* <meta
-        property="og:image"
-        content="https://arnoandco.com/og/about-card-1200x630.jpg"
-      />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
       <meta
-        property="og:image:alt"
-        content="Arno & Co. — About Us"
-      /> */}
+        property="og:image"
+        content="https://www.arnoandco.com/logo-primary.png"
+      />
+      <meta property="og:image:alt" content="Arno & Co. Logo." />
       <meta property="og:locale" content="en_US" />
 
       <HeroAbout />

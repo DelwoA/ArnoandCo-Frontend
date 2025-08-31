@@ -15,7 +15,7 @@ const ContactPage = () => {
         name="description"
         content="Contact Arno & Co. (Arno and Co.) to start your website, app, or AI project. Fast replies (48h). Serving small businesses in Sri Lanka and across the USA."
       />
-      <link rel="canonical" href="https://arnoandco.com/contact" />
+      <link rel="canonical" href="https://www.arnoandco.com/contact" />
 
       {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
       <meta property="og:type" content="website" />
@@ -28,17 +28,14 @@ const ContactPage = () => {
         property="og:description"
         content="Contact Arno & Co. (Arno and Co.) to start your website, app, or AI project. Fast replies (48h). Serving small businesses in Sri Lanka and across the USA."
       />
-      <meta property="og:url" content="https://arnoandco.com/contact" />
+      <meta property="og:url" content="https://www.arnoandco.com/contact" />
 
-      {/* TODO: Add Open Graph image later. */}
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
-      {/* <meta
+      <meta
         property="og:image"
-        content="https://arnoandco.com/og/contact-card-1200x630.jpg"
+        content="https://www.arnoandco.com/logo-primary.png"
       />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Arno & Co. — Contact us" /> */}
+      <meta property="og:image:alt" content="Arno & Co. Logo." />
       <meta property="og:locale" content="en_US" />
 
       <HeroContact />

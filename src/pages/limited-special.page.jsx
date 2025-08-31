@@ -10,7 +10,31 @@ const LimitedSpecialPage = () => {
         content="Limited-time offers from Arno & Co.—websites, apps, and AI digital bundles built fast and affordable. Join the waitlist or claim today's deal."
       />
       <meta name="robots" content="noindex,follow" />
-      <link rel="canonical" href="https://arnoandco.com/limited-special" />
+      <link rel="canonical" href="https://www.arnoandco.com/limited-special" />
+
+      {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Arno & Co." />
+      <meta
+        property="og:title"
+        content="Limited Special — Digital Products & Bundles | Arno & Co."
+      />
+      <meta
+        property="og:description"
+        content="Limited-time offers from Arno & Co.—websites, apps, and AI digital bundles built fast and affordable. Join the waitlist or claim today's deal."
+      />
+      <meta
+        property="og:url"
+        content="https://www.arnoandco.com/limited-special"
+      />
+
+      {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
+      <meta
+        property="og:image"
+        content="https://www.arnoandco.com/logo-primary.png"
+      />
+      <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:locale" content="en_US" />
 
       <main className="px-4 sm:px-6 lg:px-8">
         <section className="mx-auto max-w-[1344px] mt-15 md:mt-18 lg:mt-20">

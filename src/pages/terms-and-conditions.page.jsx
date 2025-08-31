@@ -10,8 +10,10 @@ const TermsAndConditionsPage = () => {
         name="description"
         content="Arno & Co. outlines clear terms, privacy safeguards, payment, and refund policies. Built for startups and small businesses to ensure trust and peace of mind."
       />
-      <meta name="robots" content="noindex,follow" />
-      <link rel="canonical" href="https://arnoandco.com/terms-and-conditions" />
+      <link
+        rel="canonical"
+        href="https://www.arnoandco.com/terms-and-conditions"
+      />
 
       {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
       <meta property="og:type" content="website" />
@@ -26,20 +28,15 @@ const TermsAndConditionsPage = () => {
       />
       <meta
         property="og:url"
-        content="https://arnoandco.com/terms-and-conditions"
+        content="https://www.arnoandco.com/terms-and-conditions"
       />
-      {/* TODO: Add Open Graph image later. */}
+
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
-      {/* <meta
-        property="og:image"
-        content="https://arnoandco.com/og/terms-and-conditions-card-1200x630.jpg"
-      />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
       <meta
-        property="og:image:alt"
-        content="Arno & Co. — Terms & Conditions, Privacy & Refund Policy"
-      /> */}
+        property="og:image"
+        content="https://www.arnoandco.com/logo-primary.png"
+      />
+      <meta property="og:image:alt" content="Arno & Co. Logo." />
       <meta property="og:locale" content="en_US" />
 
       <main>

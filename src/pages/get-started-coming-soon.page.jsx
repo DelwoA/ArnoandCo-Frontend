@@ -11,17 +11,41 @@ const GetStartedComingSoonPage = () => {
       </title>
       <meta
         name="description"
-        content="Get Started — Fast Project Kickoff (Coming Soon) | Arno & Co."
+        content="Get started in minutes with Arno & Co. — a simple, secure platform to share goals, align scope, and launch projects fast with clear updates."
       />
-      <meta name="robots" content="noindex,follow" />
-      <link rel="canonical" href="https://arnoandco.com/get-started-now" />
-
       {/* When the feature is live, add: */}
       {/* <title>Get Started — Kick Off Your Project in Minutes | Arno & Co.</title>
       <meta
         name="description"
         content="Start your website, app, or AI project in minutes. Share goals and files, align on scope, and move with clear next steps in a secure workspace."
       /> */}
+
+      {/* <meta name="robots" content="noindex,follow" /> */}
+      <link rel="canonical" href="https://www.arnoandco.com/get-started-now" />
+
+      {/* Open Graph for Facebook / LinkedIn / WhatsApp */}
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Arno & Co." />
+      <meta
+        property="og:title"
+        content="Get Started — Fast Project Kickoff (Coming Soon) | Arno & Co."
+      />
+      <meta
+        property="og:description"
+        content="Get started in minutes with Arno & Co. — a simple, secure platform to share goals, align scope, and launch projects fast with clear updates."
+      />
+      <meta
+        property="og:url"
+        content="https://www.arnoandco.com/get-started-now"
+      />
+
+      {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
+      <meta
+        property="og:image"
+        content="https://www.arnoandco.com/logo-primary.png"
+      />
+      <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:locale" content="en_US" />
 
       <main>
         <ContentWrapper>
