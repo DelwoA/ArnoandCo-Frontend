@@ -9,21 +9,36 @@ const RootLayout = () => {
     "@id": "https://www.arnoandco.com/#organization",
     name: "Arno & Co.",
     legalName: "Arno & Co.",
-    url: "https://www.arnoandco.com",
+    url: "https://www.arnoandco.com/",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.arnoandco.com/logo-primary.png",
+      width: 1563,
+      height: 1563,
+    },
+    image: "https://www.arnoandco.com/logo-primary.png",
     sameAs: [
       "https://www.facebook.com/arnoandcohq",
-      // TODO: replace with your real LinkedIn company URL
-      "https://www.linkedin.com/company/REPLACE_WITH_REAL_LINKEDIN_URL",
+      "https://www.linkedin.com/company/arnoandco/",
       "https://www.instagram.com/arnoandcohq/",
       "https://wa.me/94742391833",
     ],
     brand: {
       "@type": "Brand",
       name: "Arno & Co.",
-      // "logo": "https://www.arnoandco.com/logo-512.png"
+      logo: "https://www.arnoandco.com/logo-primary.png",
     },
     email: "hello@arnoandco.com",
-    foundingDate: "2025-01-01",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "hello@arnoandco.com",
+        telephone: "+94742391833",
+        availableLanguage: ["en"],
+      },
+    ],
+    foundingDate: "2025-08-01",
 
     // Organization-level coverage (your stated markets)
     areaServed: [

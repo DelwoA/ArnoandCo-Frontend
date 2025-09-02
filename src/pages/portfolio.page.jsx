@@ -1,5 +1,10 @@
 const PortfolioPage = () => {
-  return <div>PortfolioPage</div>;
+  return (
+    <>
+      <meta name="robots" content="noindex,follow" />
+      PortfolioPage
+    </>
+  );
 };
 
 export default PortfolioPage;
