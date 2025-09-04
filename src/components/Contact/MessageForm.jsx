@@ -3,7 +3,7 @@ import { createMessage } from "@/lib/contact";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Send } from "lucide-react";
+import { Send, Loader2 } from "lucide-react";
 import Reveal from "@/components/animations/Reveal";
 import { toast } from "sonner";
 
@@ -19,6 +19,7 @@ const MessageForm = () => {
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,6 +54,7 @@ const MessageForm = () => {
     if (!validate()) return;
 
     try {
+      setIsSubmitting(true);
       // Send form data to backend API
       await createMessage(values);
 
@@ -73,6 +75,8 @@ const MessageForm = () => {
         description:
           "An error occurred while sending your message. Please try again.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -224,10 +228,14 @@ const MessageForm = () => {
           <div className="flex items-center gap-3 pt-2">
             <Button
               type="submit"
+              disabled={isSubmitting}
               className="rounded-full h-12 w-full text-base bg-[#071b31] text-white hover:bg-[#c0e0f6] hover:text-[#071b31] transition-all duration-200 ease-in-out shadow-sm"
             >
               <Send className="w-4 h-4 mr-1" />
               Send Message
+              {isSubmitting && (
+                <Loader2 className="w-4 h-4 ml-2 animate-spin" />
+              )}
             </Button>
           </div>
         </form>
