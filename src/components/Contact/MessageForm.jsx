@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createMessage } from "@/lib/contact";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -46,15 +47,23 @@ const MessageForm = () => {
     return Object.keys(next).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    setSubmitted(true);
-    // Simulate submission; keep console for now
-    // eslint-disable-next-line no-console
-    console.log("Contact submission", values);
-    setValues(initialState);
-    setTimeout(() => setSubmitted(false), 4000);
+
+    try {
+      // Send form data to backend API
+      await createMessage(values);
+
+      // Show confirmation and reset the form on success
+      setSubmitted(true);
+      setValues(initialState);
+      setTimeout(() => setSubmitted(false), 4000);
+    } catch (error) {
+      // Keep unobtrusive error handling for now
+      // eslint-disable-next-line no-console
+      console.error("Failed to send contact message", error);
+    }
   };
 
   return (
