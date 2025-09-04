@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import Reveal from "@/components/animations/Reveal";
+import { toast } from "sonner";
 
 const initialState = {
   fullName: "",
@@ -55,7 +56,8 @@ const MessageForm = () => {
       // Send form data to backend API
       await createMessage(values);
 
-      // Show confirmation and reset the form on success
+      // Show confirmation via toast and reset the form on success
+      toast.success("Thanks! We'll be in touch shortly.");
       setSubmitted(true);
       setValues(initialState);
       setTimeout(() => setSubmitted(false), 4000);
@@ -63,6 +65,11 @@ const MessageForm = () => {
       // Keep unobtrusive error handling for now
       // eslint-disable-next-line no-console
       console.error("Failed to send contact message", error);
+      // Post-validation error: notify that message was not sent
+      toast.error("Message not sent", {
+        description:
+          "An error occurred while sending your message. Please try again.",
+      });
     }
   };
 
@@ -219,11 +226,6 @@ const MessageForm = () => {
               <Send className="w-4 h-4 mr-1" />
               Send Message
             </Button>
-            {submitted && (
-              <span className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-full px-3 py-1">
-                Thanks! We'll be in touch shortly.
-              </span>
-            )}
           </div>
         </form>
       </Reveal>

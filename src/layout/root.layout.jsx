@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const RootLayout = () => {
   // Build it as a JS object (comments go OUTSIDE the object, not inside the JSON)
@@ -107,6 +108,7 @@ const RootLayout = () => {
         <Outlet />
         <Footer />
       </div>
+      <Toaster richColors closeButton position="top-center" />
     </>
   );
 };
