@@ -9,6 +9,11 @@
 
   "redirects": [
     {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "arnoandco.com" }],
       "destination": "https://www.arnoandco.com/$1",
