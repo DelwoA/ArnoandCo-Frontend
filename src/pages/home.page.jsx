@@ -38,9 +38,27 @@ const HomePage = () => {
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
       <meta
         property="og:image"
-        content="https://www.arnoandco.com/logo-primary.png"
+        content="https://www.arnoandco.com/logo-primary-horizontal.png"
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1563" />
+      <meta property="og:image:height" content="1563" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Arno & Co. - Digital Solutions to Help Businesses Grow."
+      />
+      <meta
+        name="twitter:description"
+        content="Arno & Co. builds websites, apps and AI tools to help your business grow. Fast delivery. Reliable results."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.arnoandco.com/logo-primary-horizontal.png"
+      />
+
       <meta property="og:locale" content="en_US" />
 
       <Hero />
