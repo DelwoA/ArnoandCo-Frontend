@@ -52,7 +52,7 @@ const HomePage = () => {
       />
       <meta
         name="twitter:description"
-        content="Arno & Co. builds websites, apps and AI tools to help your business grow. Fast delivery. Reliable results."
+        content="Arno & Co. is a software development company that builds websites, apps and AI solutions to boost visibility and conversions—fast results in 3–6 weeks. Book a consult."
       />
       <meta
         name="twitter:image"
