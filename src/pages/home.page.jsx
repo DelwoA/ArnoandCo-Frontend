@@ -38,7 +38,7 @@ const HomePage = () => {
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
       <meta
         property="og:image"
-        content="https://www.arnoandco.com/logo-primary-horizontal.png"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
       <meta property="og:image:type" content="image/png" />
@@ -56,9 +56,8 @@ const HomePage = () => {
       />
       <meta
         name="twitter:image"
-        content="https://www.arnoandco.com/logo-primary-horizontal.png"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
       />
-
       <meta property="og:locale" content="en_US" />
 
       <Hero />
