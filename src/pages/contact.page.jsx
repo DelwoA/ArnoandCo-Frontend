@@ -33,9 +33,26 @@ const ContactPage = () => {
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
       <meta
         property="og:image"
-        content="https://www.arnoandco.com/logo-primary.png"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Contact Us - Arno & Co. | Start Your Website, App, or AI Project"
+      />
+      <meta
+        name="twitter:description"
+        content="Contact Arno & Co. (Arno and Co.) to start your website, app, or AI project. Fast replies (48h). Serving small businesses in Sri Lanka and across the USA."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
+      />
       <meta property="og:locale" content="en_US" />
 
       <HeroContact />

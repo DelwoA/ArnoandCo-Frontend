@@ -34,9 +34,26 @@ const AboutPage = () => {
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
       <meta
         property="og:image"
-        content="https://www.arnoandco.com/logo-primary.png"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="About Us - Arno & Co. | Website & App Solutions for Startups"
+      />
+      <meta
+        name="twitter:description"
+        content="Learn about Arno & Co., a startup team in Wyoming helping small businesses in Sri Lanka and the USA build websites, apps, and AI tools to grow faster."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
+      />
       <meta property="og:locale" content="en_US" />
 
       <HeroAbout />

@@ -42,9 +42,26 @@ const GetStartedComingSoonPage = () => {
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
       <meta
         property="og:image"
-        content="https://www.arnoandco.com/logo-primary.png"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Get Started — Fast Project Kickoff (Coming Soon) | Arno & Co."
+      />
+      <meta
+        name="twitter:description"
+        content="Get started in minutes with Arno & Co. — a simple, secure platform to share goals, align scope, and launch projects fast with clear updates."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
+      />
       <meta property="og:locale" content="en_US" />
 
       <main>

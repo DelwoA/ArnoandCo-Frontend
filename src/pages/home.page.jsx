@@ -42,8 +42,8 @@ const HomePage = () => {
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
       <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1563" />
-      <meta property="og:image:height" content="1563" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta

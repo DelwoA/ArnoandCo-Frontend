@@ -31,9 +31,26 @@ const LimitedSpecialPage = () => {
       {/* Recommended image: 1200×630 PNG/JPG; absolute URL */}
       <meta
         property="og:image"
-        content="https://www.arnoandco.com/logo-primary.png"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
       />
       <meta property="og:image:alt" content="Arno & Co. Logo." />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Limited Special — Digital Products & Bundles | Arno & Co."
+      />
+      <meta
+        name="twitter:description"
+        content="Limited-time offers from Arno & Co.—websites, apps, and AI digital bundles built fast and affordable. Join the waitlist or claim today's deal."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.arnoandco.com/logo-url-preview.jpg"
+      />
       <meta property="og:locale" content="en_US" />
 
       <main className="px-4 sm:px-6 lg:px-8">
